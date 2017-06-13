@@ -159,9 +159,9 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">protected</span> AbstractLoader(String publicId, String dtdResourceName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;71</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">throws</span> SAXException, ParserConfigurationException {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsCovered">&nbsp;1875</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">this</span>(<span class="keyword">new</span> HashMap&lt;&gt;(1));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;73</td>  <td class="nbHitsCovered">&nbsp;1875</td>  <td class="src"><pre class="src">&nbsp;        publicIdToResourceNameMap.put(publicId, dtdResourceName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;74</td>  <td class="nbHitsCovered">&nbsp;1875</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsCovered">&nbsp;1874</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">this</span>(<span class="keyword">new</span> HashMap&lt;&gt;(1));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;73</td>  <td class="nbHitsCovered">&nbsp;1874</td>  <td class="src"><pre class="src">&nbsp;        publicIdToResourceNameMap.put(publicId, dtdResourceName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;74</td>  <td class="nbHitsCovered">&nbsp;1874</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;75</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;76</td>  <td class="nbHits">&nbsp;</td>
@@ -178,18 +178,18 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">     */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;82</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">protected</span> AbstractLoader(Map&lt;String, String&gt; publicIdToResourceNameMap)</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;83</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">throws</span> SAXException, ParserConfigurationException {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;84</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">this</span>.publicIdToResourceNameMap = <span class="keyword">new</span> HashMap&lt;&gt;(publicIdToResourceNameMap);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;85</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> SAXParserFactory factory = SAXParserFactory.newInstance();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;86</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        factory.setFeature(LOAD_EXTERNAL_DTD, <span class="keyword">true</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;87</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        factory.setFeature(EXTERNAL_GENERAL_ENTITIES, <span class="keyword">true</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;88</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        factory.setValidating(<span class="keyword">true</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;89</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        factory.setNamespaceAware(<span class="keyword">true</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;90</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        parser = factory.newSAXParser().getXMLReader();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;91</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        parser.setContentHandler(<span class="keyword">this</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;92</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        parser.setEntityResolver(<span class="keyword">this</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;93</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;        parser.setErrorHandler(<span class="keyword">this</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;94</td>  <td class="nbHitsCovered">&nbsp;2390</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;83</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">throws</span> SAXException, ParserConfigurationException {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;84</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">this</span>.publicIdToResourceNameMap = <span class="keyword">new</span> HashMap&lt;&gt;(publicIdToResourceNameMap);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;85</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> SAXParserFactory factory = SAXParserFactory.newInstance();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;86</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        factory.setFeature(LOAD_EXTERNAL_DTD, <span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;87</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        factory.setFeature(EXTERNAL_GENERAL_ENTITIES, <span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;88</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        factory.setValidating(<span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;89</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        factory.setNamespaceAware(<span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;90</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        parser = factory.newSAXParser().getXMLReader();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;91</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        parser.setContentHandler(<span class="keyword">this</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;92</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        parser.setEntityResolver(<span class="keyword">this</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;93</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;        parser.setErrorHandler(<span class="keyword">this</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;94</td>  <td class="nbHitsCovered">&nbsp;2389</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;95</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;96</td>  <td class="nbHits">&nbsp;</td>
@@ -208,8 +208,8 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">void</span> parseInputSource(InputSource inputSource)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;103</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">throws</span> IOException, SAXException {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;104</td>  <td class="nbHitsCovered">&nbsp;2386</td>  <td class="src"><pre class="src">&nbsp;        parser.parse(inputSource);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;105</td>  <td class="nbHitsCovered">&nbsp;2364</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;104</td>  <td class="nbHitsCovered">&nbsp;2385</td>  <td class="src"><pre class="src">&nbsp;        parser.parse(inputSource);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;105</td>  <td class="nbHitsCovered">&nbsp;2363</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;106</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;107</td>  <td class="nbHits">&nbsp;</td>
@@ -220,23 +220,23 @@
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">throws</span> SAXException, IOException {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;110</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> InputSource inputSource;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;111</td>  <td class="nbHitsCovered"><a title="Line 111: Conditional coverage 100% (2/2).">&nbsp;2381</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 111: Conditional coverage 100% (2/2).">        <span class="keyword">if</span> (publicIdToResourceNameMap.keySet().contains(publicId)) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;112</td>  <td class="nbHitsCovered">&nbsp;2377</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> String dtdResourceName =</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;113</td>  <td class="nbHitsCovered">&nbsp;2377</td>  <td class="src"><pre class="src">&nbsp;                    publicIdToResourceNameMap.get(publicId);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;114</td>  <td class="nbHitsCovered">&nbsp;2377</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> ClassLoader loader =</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;115</td>  <td class="nbHitsCovered">&nbsp;2377</td>  <td class="src"><pre class="src">&nbsp;                getClass().getClassLoader();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;116</td>  <td class="nbHitsCovered">&nbsp;2377</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> InputStream dtdIs =</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;117</td>  <td class="nbHitsCovered">&nbsp;2377</td>  <td class="src"><pre class="src">&nbsp;                loader.getResourceAsStream(dtdResourceName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;111</td>  <td class="nbHitsCovered"><a title="Line 111: Conditional coverage 100% (2/2).">&nbsp;2380</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 111: Conditional coverage 100% (2/2).">        <span class="keyword">if</span> (publicIdToResourceNameMap.keySet().contains(publicId)) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;112</td>  <td class="nbHitsCovered">&nbsp;2376</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> String dtdResourceName =</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;113</td>  <td class="nbHitsCovered">&nbsp;2376</td>  <td class="src"><pre class="src">&nbsp;                    publicIdToResourceNameMap.get(publicId);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;114</td>  <td class="nbHitsCovered">&nbsp;2376</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> ClassLoader loader =</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;115</td>  <td class="nbHitsCovered">&nbsp;2376</td>  <td class="src"><pre class="src">&nbsp;                getClass().getClassLoader();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;116</td>  <td class="nbHitsCovered">&nbsp;2376</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> InputStream dtdIs =</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;117</td>  <td class="nbHitsCovered">&nbsp;2376</td>  <td class="src"><pre class="src">&nbsp;                loader.getResourceAsStream(dtdResourceName);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;118</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;119</td>  <td class="nbHitsCovered">&nbsp;2377</td>  <td class="src"><pre class="src">&nbsp;            inputSource = <span class="keyword">new</span> InputSource(dtdIs);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;120</td>  <td class="nbHitsCovered">&nbsp;2377</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;119</td>  <td class="nbHitsCovered">&nbsp;2376</td>  <td class="src"><pre class="src">&nbsp;            inputSource = <span class="keyword">new</span> InputSource(dtdIs);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;120</td>  <td class="nbHitsCovered">&nbsp;2376</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;121</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">else</span> {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;122</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;            inputSource = <span class="keyword">super</span>.resolveEntity(publicId, systemId);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;123</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;124</td>  <td class="nbHitsCovered">&nbsp;2381</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> inputSource;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;124</td>  <td class="nbHitsCovered">&nbsp;2380</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> inputSource;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;125</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;126</td>  <td class="nbHits">&nbsp;</td>
@@ -261,6 +261,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 6/13/17 7:26 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 6/13/17 7:44 PM.</div>
 </body>
 </html>

@@ -124,7 +124,7 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment"> * @author Oliver Burn</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;53</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment"> */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;54</td>  <td class="nbHitsCovered">&nbsp;13378</td>  <td class="src"><pre class="src">&nbsp;<span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> ConfigurationLoader {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;54</td>  <td class="nbHitsCovered">&nbsp;13330</td>  <td class="src"><pre class="src">&nbsp;<span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">class</span> ConfigurationLoader {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;55</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;56</td>  <td class="nbHits">&nbsp;</td>
@@ -325,7 +325,7 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> Configuration loadConfiguration(String config,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;161</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            PropertyResolver overridePropsResolver) <span class="keyword">throws</span> CheckstyleException {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;162</td>  <td class="nbHitsCovered">&nbsp;31</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> loadConfiguration(config, overridePropsResolver, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;162</td>  <td class="nbHitsCovered">&nbsp;32</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> loadConfiguration(config, overridePropsResolver, <span class="keyword">false</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;163</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;164</td>  <td class="nbHits">&nbsp;</td>
@@ -521,28 +521,28 @@
   <td class="src"><pre class="src">&nbsp;            String value, PropertyResolver props, String defaultValue)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;266</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">throws</span> CheckstyleException {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;267</td>  <td class="nbHitsCovered"><a title="Line 267: Conditional coverage 100% (2/2).">&nbsp;1044</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 267: Conditional coverage 100% (2/2).">        <span class="keyword">if</span> (value == <span class="keyword">null</span>) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;267</td>  <td class="nbHitsCovered"><a title="Line 267: Conditional coverage 100% (2/2).">&nbsp;1037</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 267: Conditional coverage 100% (2/2).">        <span class="keyword">if</span> (value == <span class="keyword">null</span>) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;268</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> <span class="keyword">null</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;269</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;270</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;271</td>  <td class="nbHitsCovered">&nbsp;1043</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> List&lt;String&gt; fragments = <span class="keyword">new</span> ArrayList&lt;&gt;();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;272</td>  <td class="nbHitsCovered">&nbsp;1043</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> List&lt;String&gt; propertyRefs = <span class="keyword">new</span> ArrayList&lt;&gt;();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;273</td>  <td class="nbHitsCovered">&nbsp;1043</td>  <td class="src"><pre class="src">&nbsp;        parsePropertyString(value, fragments, propertyRefs);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;271</td>  <td class="nbHitsCovered">&nbsp;1036</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> List&lt;String&gt; fragments = <span class="keyword">new</span> ArrayList&lt;&gt;();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;272</td>  <td class="nbHitsCovered">&nbsp;1036</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> List&lt;String&gt; propertyRefs = <span class="keyword">new</span> ArrayList&lt;&gt;();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;273</td>  <td class="nbHitsCovered">&nbsp;1036</td>  <td class="src"><pre class="src">&nbsp;        parsePropertyString(value, fragments, propertyRefs);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;274</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;275</td>  <td class="nbHitsCovered">&nbsp;1042</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> StringBuilder sb = <span class="keyword">new</span> StringBuilder();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;276</td>  <td class="nbHitsCovered">&nbsp;1042</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> Iterator&lt;String&gt; fragmentsIterator = fragments.iterator();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;277</td>  <td class="nbHitsCovered">&nbsp;1042</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> Iterator&lt;String&gt; propertyRefsIterator = propertyRefs.iterator();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;278</td>  <td class="nbHitsCovered"><a title="Line 278: Conditional coverage 100% (2/2).">&nbsp;2198</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 278: Conditional coverage 100% (2/2).">        <span class="keyword">while</span> (fragmentsIterator.hasNext()) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;279</td>  <td class="nbHitsCovered">&nbsp;1171</td>  <td class="src"><pre class="src">&nbsp;            String fragment = fragmentsIterator.next();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;280</td>  <td class="nbHitsCovered"><a title="Line 280: Conditional coverage 100% (2/2).">&nbsp;1171</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 280: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (fragment == <span class="keyword">null</span>) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;281</td>  <td class="nbHitsCovered">&nbsp;49</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String propertyName = propertyRefsIterator.next();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;282</td>  <td class="nbHitsCovered">&nbsp;49</td>  <td class="src"><pre class="src">&nbsp;                fragment = props.resolve(propertyName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;283</td>  <td class="nbHitsCovered"><a title="Line 283: Conditional coverage 100% (2/2).">&nbsp;49</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 283: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (fragment == <span class="keyword">null</span>) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;284</td>  <td class="nbHitsCovered"><a title="Line 284: Conditional coverage 100% (2/2).">&nbsp;15</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 284: Conditional coverage 100% (2/2).">                    <span class="keyword">if</span> (defaultValue != <span class="keyword">null</span>) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;285</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> defaultValue;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;275</td>  <td class="nbHitsCovered">&nbsp;1035</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> StringBuilder sb = <span class="keyword">new</span> StringBuilder();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;276</td>  <td class="nbHitsCovered">&nbsp;1035</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> Iterator&lt;String&gt; fragmentsIterator = fragments.iterator();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;277</td>  <td class="nbHitsCovered">&nbsp;1035</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">final</span> Iterator&lt;String&gt; propertyRefsIterator = propertyRefs.iterator();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;278</td>  <td class="nbHitsCovered"><a title="Line 278: Conditional coverage 100% (2/2).">&nbsp;2185</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 278: Conditional coverage 100% (2/2).">        <span class="keyword">while</span> (fragmentsIterator.hasNext()) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;279</td>  <td class="nbHitsCovered">&nbsp;1164</td>  <td class="src"><pre class="src">&nbsp;            String fragment = fragmentsIterator.next();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;280</td>  <td class="nbHitsCovered"><a title="Line 280: Conditional coverage 100% (2/2).">&nbsp;1164</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 280: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (fragment == <span class="keyword">null</span>) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;281</td>  <td class="nbHitsCovered">&nbsp;48</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String propertyName = propertyRefsIterator.next();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;282</td>  <td class="nbHitsCovered">&nbsp;48</td>  <td class="src"><pre class="src">&nbsp;                fragment = props.resolve(propertyName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;283</td>  <td class="nbHitsCovered"><a title="Line 283: Conditional coverage 100% (2/2).">&nbsp;48</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 283: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (fragment == <span class="keyword">null</span>) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;284</td>  <td class="nbHitsCovered"><a title="Line 284: Conditional coverage 100% (2/2).">&nbsp;14</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 284: Conditional coverage 100% (2/2).">                    <span class="keyword">if</span> (defaultValue != <span class="keyword">null</span>) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;285</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> defaultValue;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;286</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;287</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">throw</span> <span class="keyword">new</span> CheckstyleException(</pre></td></tr>
@@ -552,11 +552,11 @@
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;290</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;291</td>  <td class="nbHitsCovered">&nbsp;1156</td>  <td class="src"><pre class="src">&nbsp;            sb.append(fragment);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;292</td>  <td class="nbHitsCovered">&nbsp;1156</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;291</td>  <td class="nbHitsCovered">&nbsp;1150</td>  <td class="src"><pre class="src">&nbsp;            sb.append(fragment);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;292</td>  <td class="nbHitsCovered">&nbsp;1150</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;293</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;294</td>  <td class="nbHitsCovered">&nbsp;1027</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> sb.toString();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;294</td>  <td class="nbHitsCovered">&nbsp;1021</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> sb.toString();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;295</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;296</td>  <td class="nbHits">&nbsp;</td>
@@ -609,16 +609,16 @@
   <td class="src"><pre class="src">&nbsp;                                           List&lt;String&gt; propertyRefs)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;320</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">throws</span> CheckstyleException {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;321</td>  <td class="nbHitsCovered">&nbsp;1043</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">int</span> prev = 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;321</td>  <td class="nbHitsCovered">&nbsp;1036</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">int</span> prev = 0;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;322</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//search for the next instance of $ from the 'prev' position</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;323</td>  <td class="nbHitsCovered">&nbsp;1043</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">int</span> pos = value.indexOf(DOLLAR_SIGN, prev);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;324</td>  <td class="nbHitsCovered"><a title="Line 324: Conditional coverage 100% (2/2).">&nbsp;1200</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 324: Conditional coverage 100% (2/2).">        <span class="keyword">while</span> (pos &gt;= 0) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;323</td>  <td class="nbHitsCovered">&nbsp;1036</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">int</span> pos = value.indexOf(DOLLAR_SIGN, prev);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;324</td>  <td class="nbHitsCovered"><a title="Line 324: Conditional coverage 100% (2/2).">&nbsp;1192</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 324: Conditional coverage 100% (2/2).">        <span class="keyword">while</span> (pos &gt;= 0) {</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;325</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;326</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="comment">//if there was any text before this, add it as a fragment</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;327</td>  <td class="nbHitsCovered"><a title="Line 327: Conditional coverage 100% (2/2).">&nbsp;158</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 327: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (pos &gt; 0) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;327</td>  <td class="nbHitsCovered"><a title="Line 327: Conditional coverage 100% (2/2).">&nbsp;157</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 327: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (pos &gt; 0) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;328</td>  <td class="nbHitsCovered">&nbsp;105</td>  <td class="src"><pre class="src">&nbsp;                fragments.add(value.substring(prev, pos));</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;329</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
@@ -626,26 +626,26 @@
   <td class="src"><pre class="src">&nbsp;            <span class="comment">//if we are at the end of the string, we tack on a $</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;331</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="comment">//then move past it</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;332</td>  <td class="nbHitsCovered"><a title="Line 332: Conditional coverage 100% (2/2).">&nbsp;158</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 332: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (pos == value.length() - 1) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;332</td>  <td class="nbHitsCovered"><a title="Line 332: Conditional coverage 100% (2/2).">&nbsp;157</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 332: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (pos == value.length() - 1) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;333</td>  <td class="nbHitsCovered">&nbsp;72</td>  <td class="src"><pre class="src">&nbsp;                fragments.add(String.valueOf(DOLLAR_SIGN));</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;334</td>  <td class="nbHitsCovered">&nbsp;72</td>  <td class="src"><pre class="src">&nbsp;                prev = pos + 1;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;335</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;336</td>  <td class="nbHitsCovered"><a title="Line 336: Conditional coverage 100% (2/2).">&nbsp;86</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 336: Conditional coverage 100% (2/2).">            <span class="keyword">else</span> <span class="keyword">if</span> (value.charAt(pos + 1) == <span class="string">'{'</span>) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;336</td>  <td class="nbHitsCovered"><a title="Line 336: Conditional coverage 100% (2/2).">&nbsp;85</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 336: Conditional coverage 100% (2/2).">            <span class="keyword">else</span> <span class="keyword">if</span> (value.charAt(pos + 1) == <span class="string">'{'</span>) {</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;337</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//property found, extract its name or bail on a typo</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;338</td>  <td class="nbHitsCovered">&nbsp;50</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> <span class="keyword">int</span> endName = value.indexOf(<span class="string">'}'</span>, pos);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;339</td>  <td class="nbHitsCovered"><a title="Line 339: Conditional coverage 100% (2/2).">&nbsp;50</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 339: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (endName &lt; 0) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;338</td>  <td class="nbHitsCovered">&nbsp;49</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> <span class="keyword">int</span> endName = value.indexOf(<span class="string">'}'</span>, pos);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;339</td>  <td class="nbHitsCovered"><a title="Line 339: Conditional coverage 100% (2/2).">&nbsp;49</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 339: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (endName &lt; 0) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;340</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">throw</span> <span class="keyword">new</span> CheckstyleException(<span class="string">"Syntax error in property: "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;341</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                    + value);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;342</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;343</td>  <td class="nbHitsCovered">&nbsp;49</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String propertyName = value.substring(pos + 2, endName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;344</td>  <td class="nbHitsCovered">&nbsp;49</td>  <td class="src"><pre class="src">&nbsp;                fragments.add(<span class="keyword">null</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;345</td>  <td class="nbHitsCovered">&nbsp;49</td>  <td class="src"><pre class="src">&nbsp;                propertyRefs.add(propertyName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;346</td>  <td class="nbHitsCovered">&nbsp;49</td>  <td class="src"><pre class="src">&nbsp;                prev = endName + 1;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;347</td>  <td class="nbHitsCovered">&nbsp;49</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;343</td>  <td class="nbHitsCovered">&nbsp;48</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String propertyName = value.substring(pos + 2, endName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;344</td>  <td class="nbHitsCovered">&nbsp;48</td>  <td class="src"><pre class="src">&nbsp;                fragments.add(<span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;345</td>  <td class="nbHitsCovered">&nbsp;48</td>  <td class="src"><pre class="src">&nbsp;                propertyRefs.add(propertyName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;346</td>  <td class="nbHitsCovered">&nbsp;48</td>  <td class="src"><pre class="src">&nbsp;                prev = endName + 1;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;347</td>  <td class="nbHitsCovered">&nbsp;48</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;348</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">else</span> {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;349</td>  <td class="nbHitsCovered"><a title="Line 349: Conditional coverage 100% (2/2).">&nbsp;36</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 349: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (value.charAt(pos + 1) == DOLLAR_SIGN) {</a></pre></td></tr>
@@ -669,18 +669,18 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;361</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="comment">//search for the next instance of $ from the 'prev' position</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;362</td>  <td class="nbHitsCovered">&nbsp;157</td>  <td class="src"><pre class="src">&nbsp;            pos = value.indexOf(DOLLAR_SIGN, prev);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;362</td>  <td class="nbHitsCovered">&nbsp;156</td>  <td class="src"><pre class="src">&nbsp;            pos = value.indexOf(DOLLAR_SIGN, prev);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;363</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;364</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//no more $ signs found</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;365</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//if there is any tail to the file, append it</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;366</td>  <td class="nbHitsCovered"><a title="Line 366: Conditional coverage 100% (2/2).">&nbsp;1042</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 366: Conditional coverage 100% (2/2).">        <span class="keyword">if</span> (prev &lt; value.length()) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;367</td>  <td class="nbHitsCovered">&nbsp;909</td>  <td class="src"><pre class="src">&nbsp;            fragments.add(value.substring(prev));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;366</td>  <td class="nbHitsCovered"><a title="Line 366: Conditional coverage 100% (2/2).">&nbsp;1035</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 366: Conditional coverage 100% (2/2).">        <span class="keyword">if</span> (prev &lt; value.length()) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;367</td>  <td class="nbHitsCovered">&nbsp;903</td>  <td class="src"><pre class="src">&nbsp;            fragments.add(value.substring(prev));</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;368</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;369</td>  <td class="nbHitsCovered">&nbsp;1042</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;369</td>  <td class="nbHitsCovered">&nbsp;1035</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;370</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;371</td>  <td class="nbHits">&nbsp;</td>
@@ -762,16 +762,16 @@
   <td class="src"><pre class="src">&nbsp;                                 Attributes attributes)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;411</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">throws</span> SAXException {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;412</td>  <td class="nbHitsCovered"><a title="Line 412: Conditional coverage 100% (2/2).">&nbsp;2705</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 412: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (qName.equals(MODULE)) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;412</td>  <td class="nbHitsCovered"><a title="Line 412: Conditional coverage 100% (2/2).">&nbsp;2693</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 412: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (qName.equals(MODULE)) {</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;413</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//create configuration</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;414</td>  <td class="nbHitsCovered">&nbsp;1630</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String name = attributes.getValue(NAME);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;415</td>  <td class="nbHitsCovered">&nbsp;1630</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> DefaultConfiguration conf =</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;414</td>  <td class="nbHitsCovered">&nbsp;1626</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String name = attributes.getValue(NAME);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;415</td>  <td class="nbHitsCovered">&nbsp;1626</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> DefaultConfiguration conf =</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;416</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    <span class="keyword">new</span> DefaultConfiguration(name);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;417</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;418</td>  <td class="nbHitsCovered"><a title="Line 418: Conditional coverage 100% (2/2).">&nbsp;1630</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 418: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (configuration == <span class="keyword">null</span>) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;418</td>  <td class="nbHitsCovered"><a title="Line 418: Conditional coverage 100% (2/2).">&nbsp;1626</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 418: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (configuration == <span class="keyword">null</span>) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;419</td>  <td class="nbHitsCovered">&nbsp;458</td>  <td class="src"><pre class="src">&nbsp;                    configuration = conf;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;420</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
@@ -779,53 +779,53 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;422</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//add configuration to it's parent</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;423</td>  <td class="nbHitsCovered"><a title="Line 423: Conditional coverage 100% (2/2).">&nbsp;1630</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 423: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!configStack.isEmpty()) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;424</td>  <td class="nbHitsCovered">&nbsp;1172</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">final</span> DefaultConfiguration top =</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;425</td>  <td class="nbHitsCovered">&nbsp;1172</td>  <td class="src"><pre class="src">&nbsp;                        configStack.peek();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;426</td>  <td class="nbHitsCovered">&nbsp;1172</td>  <td class="src"><pre class="src">&nbsp;                    top.addChild(conf);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;423</td>  <td class="nbHitsCovered"><a title="Line 423: Conditional coverage 100% (2/2).">&nbsp;1626</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 423: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!configStack.isEmpty()) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;424</td>  <td class="nbHitsCovered">&nbsp;1168</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">final</span> DefaultConfiguration top =</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;425</td>  <td class="nbHitsCovered">&nbsp;1168</td>  <td class="src"><pre class="src">&nbsp;                        configStack.peek();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;426</td>  <td class="nbHitsCovered">&nbsp;1168</td>  <td class="src"><pre class="src">&nbsp;                    top.addChild(conf);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;427</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;428</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;429</td>  <td class="nbHitsCovered">&nbsp;1630</td>  <td class="src"><pre class="src">&nbsp;                configStack.push(conf);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;430</td>  <td class="nbHitsCovered">&nbsp;1630</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;431</td>  <td class="nbHitsCovered"><a title="Line 431: Conditional coverage 100% (2/2).">&nbsp;1075</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 431: Conditional coverage 100% (2/2).">            <span class="keyword">else</span> <span class="keyword">if</span> (qName.equals(PROPERTY)) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;429</td>  <td class="nbHitsCovered">&nbsp;1626</td>  <td class="src"><pre class="src">&nbsp;                configStack.push(conf);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;430</td>  <td class="nbHitsCovered">&nbsp;1626</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;431</td>  <td class="nbHitsCovered"><a title="Line 431: Conditional coverage 100% (2/2).">&nbsp;1067</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 431: Conditional coverage 100% (2/2).">            <span class="keyword">else</span> <span class="keyword">if</span> (qName.equals(PROPERTY)) {</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;432</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//extract value and name</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;433</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String value;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;434</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">try</span> {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;435</td>  <td class="nbHitsCovered">&nbsp;2038</td>  <td class="src"><pre class="src">&nbsp;                    value = replaceProperties(attributes.getValue(VALUE),</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;436</td>  <td class="nbHitsCovered">&nbsp;1019</td>  <td class="src"><pre class="src">&nbsp;                        overridePropsResolver, attributes.getValue(DEFAULT));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;435</td>  <td class="nbHitsCovered">&nbsp;2024</td>  <td class="src"><pre class="src">&nbsp;                    value = replaceProperties(attributes.getValue(VALUE),</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;436</td>  <td class="nbHitsCovered">&nbsp;1012</td>  <td class="src"><pre class="src">&nbsp;                        overridePropsResolver, attributes.getValue(DEFAULT));</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;437</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;438</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">catch</span> (<span class="keyword">final</span> CheckstyleException ex) {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;439</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    <span class="comment">// -@cs[IllegalInstantiation] SAXException is in the overridden method signature</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;440</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">throw</span> <span class="keyword">new</span> SAXException(ex);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;441</td>  <td class="nbHitsCovered">&nbsp;1018</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;442</td>  <td class="nbHitsCovered">&nbsp;1018</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String name = attributes.getValue(NAME);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;441</td>  <td class="nbHitsCovered">&nbsp;1011</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;442</td>  <td class="nbHitsCovered">&nbsp;1011</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String name = attributes.getValue(NAME);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;443</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;444</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//add to attributes of configuration</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;445</td>  <td class="nbHitsCovered">&nbsp;1018</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> DefaultConfiguration top =</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;446</td>  <td class="nbHitsCovered">&nbsp;1018</td>  <td class="src"><pre class="src">&nbsp;                    configStack.peek();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;447</td>  <td class="nbHitsCovered">&nbsp;1018</td>  <td class="src"><pre class="src">&nbsp;                top.addAttribute(name, value);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;448</td>  <td class="nbHitsCovered">&nbsp;1018</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;449</td>  <td class="nbHitsCovered"><a title="Line 449: Conditional coverage 100% (2/2).">&nbsp;56</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 449: Conditional coverage 100% (2/2).">            <span class="keyword">else</span> <span class="keyword">if</span> (qName.equals(MESSAGE)) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;445</td>  <td class="nbHitsCovered">&nbsp;1011</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> DefaultConfiguration top =</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;446</td>  <td class="nbHitsCovered">&nbsp;1011</td>  <td class="src"><pre class="src">&nbsp;                    configStack.peek();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;447</td>  <td class="nbHitsCovered">&nbsp;1011</td>  <td class="src"><pre class="src">&nbsp;                top.addAttribute(name, value);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;448</td>  <td class="nbHitsCovered">&nbsp;1011</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;449</td>  <td class="nbHitsCovered"><a title="Line 449: Conditional coverage 100% (2/2).">&nbsp;55</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 449: Conditional coverage 100% (2/2).">            <span class="keyword">else</span> <span class="keyword">if</span> (qName.equals(MESSAGE)) {</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;450</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//extract key and value</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;451</td>  <td class="nbHitsCovered">&nbsp;52</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String key = attributes.getValue(KEY);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;452</td>  <td class="nbHitsCovered">&nbsp;52</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String value = attributes.getValue(VALUE);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;451</td>  <td class="nbHitsCovered">&nbsp;51</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String key = attributes.getValue(KEY);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;452</td>  <td class="nbHitsCovered">&nbsp;51</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> String value = attributes.getValue(VALUE);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;453</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;454</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//add to messages of configuration</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;455</td>  <td class="nbHitsCovered">&nbsp;52</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> DefaultConfiguration top = configStack.peek();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;456</td>  <td class="nbHitsCovered">&nbsp;52</td>  <td class="src"><pre class="src">&nbsp;                top.addMessage(key, value);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;457</td>  <td class="nbHitsCovered">&nbsp;52</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;455</td>  <td class="nbHitsCovered">&nbsp;51</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> DefaultConfiguration top = configStack.peek();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;456</td>  <td class="nbHitsCovered">&nbsp;51</td>  <td class="src"><pre class="src">&nbsp;                top.addMessage(key, value);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;457</td>  <td class="nbHitsCovered">&nbsp;51</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;458</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="keyword">else</span> {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;459</td>  <td class="nbHitsCovered"><a title="Line 459: Conditional coverage 100% (2/2).">&nbsp;4</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 459: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!qName.equals(METADATA)) {</a></pre></td></tr>
@@ -834,7 +834,7 @@
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;462</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;463</td>  <td class="nbHitsCovered">&nbsp;2703</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;463</td>  <td class="nbHitsCovered">&nbsp;2691</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;464</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;465</td>  <td class="nbHits">&nbsp;</td>
@@ -845,21 +845,21 @@
   <td class="src"><pre class="src">&nbsp;                               String localName,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;468</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                               String qName) <span class="keyword">throws</span> SAXException {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;469</td>  <td class="nbHitsCovered"><a title="Line 469: Conditional coverage 100% (2/2).">&nbsp;2698</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 469: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (qName.equals(MODULE)) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;469</td>  <td class="nbHitsCovered"><a title="Line 469: Conditional coverage 100% (2/2).">&nbsp;2686</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 469: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (qName.equals(MODULE)) {</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;470</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;471</td>  <td class="nbHitsCovered">&nbsp;1625</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> Configuration recentModule =</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;472</td>  <td class="nbHitsCovered">&nbsp;1625</td>  <td class="src"><pre class="src">&nbsp;                    configStack.pop();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;471</td>  <td class="nbHitsCovered">&nbsp;1621</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> Configuration recentModule =</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;472</td>  <td class="nbHitsCovered">&nbsp;1621</td>  <td class="src"><pre class="src">&nbsp;                    configStack.pop();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;473</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;474</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">// get severity attribute if it exists</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;475</td>  <td class="nbHitsCovered">&nbsp;1625</td>  <td class="src"><pre class="src">&nbsp;                SeverityLevel level = <span class="keyword">null</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;476</td>  <td class="nbHitsCovered"><a title="Line 476: Conditional coverage 100% (2/2).">&nbsp;1625</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 476: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (containsAttribute(recentModule, SEVERITY)) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;475</td>  <td class="nbHitsCovered">&nbsp;1621</td>  <td class="src"><pre class="src">&nbsp;                SeverityLevel level = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;476</td>  <td class="nbHitsCovered"><a title="Line 476: Conditional coverage 100% (2/2).">&nbsp;1621</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 476: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (containsAttribute(recentModule, SEVERITY)) {</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;477</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    <span class="keyword">try</span> {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;478</td>  <td class="nbHitsCovered">&nbsp;67</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">final</span> String severity = recentModule.getAttribute(SEVERITY);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;479</td>  <td class="nbHitsCovered">&nbsp;66</td>  <td class="src"><pre class="src">&nbsp;                        level = SeverityLevel.getInstance(severity);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;478</td>  <td class="nbHitsCovered">&nbsp;64</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">final</span> String severity = recentModule.getAttribute(SEVERITY);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;479</td>  <td class="nbHitsCovered">&nbsp;63</td>  <td class="src"><pre class="src">&nbsp;                        level = SeverityLevel.getInstance(severity);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;480</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;481</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">catch</span> (<span class="keyword">final</span> CheckstyleException ex) {</pre></td></tr>
@@ -871,7 +871,7 @@
 <tr>  <td class="numLine">&nbsp;485</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                <span class="string">"Problem during accessing '"</span> + SEVERITY + <span class="string">"' attribute for "</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;486</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                        + recentModule.getName(), ex);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;487</td>  <td class="nbHitsCovered">&nbsp;66</td>  <td class="src"><pre class="src">&nbsp;                    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;487</td>  <td class="nbHitsCovered">&nbsp;63</td>  <td class="src"><pre class="src">&nbsp;                    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;488</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;489</td>  <td class="nbHits">&nbsp;</td>
@@ -880,20 +880,20 @@
   <td class="src"><pre class="src">&nbsp;                <span class="comment">// omit this module if these should be omitted and the module</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;491</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">// has the severity 'ignore'</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;492</td>  <td class="nbHitsCovered"><a title="Line 492: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">&nbsp;1624</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 492: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">                <span class="keyword">final</span> <span class="keyword">boolean</span> omitModule = omitIgnoredModules</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;492</td>  <td class="nbHitsCovered"><a title="Line 492: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">&nbsp;1620</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 492: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">                <span class="keyword">final</span> <span class="keyword">boolean</span> omitModule = omitIgnoredModules</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;493</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    &amp;&amp; level == SeverityLevel.IGNORE;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;494</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;495</td>  <td class="nbHitsCovered"><a title="Line 495: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">&nbsp;1624</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 495: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">                <span class="keyword">if</span> (omitModule &amp;&amp; !configStack.isEmpty()) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;496</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">final</span> DefaultConfiguration parentModule =</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;497</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                        configStack.peek();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;498</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                    parentModule.removeChild(recentModule);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;495</td>  <td class="nbHitsCovered"><a title="Line 495: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">&nbsp;1620</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 495: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">                <span class="keyword">if</span> (omitModule &amp;&amp; !configStack.isEmpty()) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;496</td>  <td class="nbHitsCovered">&nbsp;17</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">final</span> DefaultConfiguration parentModule =</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;497</td>  <td class="nbHitsCovered">&nbsp;17</td>  <td class="src"><pre class="src">&nbsp;                        configStack.peek();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;498</td>  <td class="nbHitsCovered">&nbsp;17</td>  <td class="src"><pre class="src">&nbsp;                    parentModule.removeChild(recentModule);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;499</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;500</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;501</td>  <td class="nbHitsCovered">&nbsp;2697</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;501</td>  <td class="nbHitsCovered">&nbsp;2685</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;502</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;503</td>  <td class="nbHits">&nbsp;</td>
@@ -910,10 +910,10 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;509</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span> containsAttribute(Configuration module, String attributeName) {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;510</td>  <td class="nbHitsCovered">&nbsp;1625</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> String[] names = module.getAttributeNames();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;511</td>  <td class="nbHitsCovered">&nbsp;1625</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> Optional&lt;String&gt; result = Arrays.stream(names)</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;512</td>  <td class="nbHitsCovered">&nbsp;2497</td>  <td class="src"><pre class="src">&nbsp;                    .filter(name -&gt; name.equals(attributeName)).findFirst();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;513</td>  <td class="nbHitsCovered">&nbsp;1625</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> result.isPresent();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;510</td>  <td class="nbHitsCovered">&nbsp;1621</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> String[] names = module.getAttributeNames();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;511</td>  <td class="nbHitsCovered">&nbsp;1621</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> Optional&lt;String&gt; result = Arrays.stream(names)</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;512</td>  <td class="nbHitsCovered">&nbsp;2490</td>  <td class="src"><pre class="src">&nbsp;                    .filter(name -&gt; name.equals(attributeName)).findFirst();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;513</td>  <td class="nbHitsCovered">&nbsp;1621</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> result.isPresent();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;514</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;515</td>  <td class="nbHits">&nbsp;</td>
@@ -922,6 +922,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 6/13/17 7:26 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 6/13/17 7:44 PM.</div>
 </body>
 </html>

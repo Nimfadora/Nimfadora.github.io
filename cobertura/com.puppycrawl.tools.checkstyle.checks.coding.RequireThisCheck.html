@@ -861,14 +861,14 @@
 <tr>  <td class="numLine">&nbsp;512</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;513</td>  <td class="nbHitsCovered"><a title="Line 513: Conditional coverage 100% (2/2).">&nbsp;83</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 513: Conditional coverage 100% (2/2).">        <span class="keyword">for</span> (DetailAST variableUsage : variableUsagesInsideBlock) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;514</td>  <td class="nbHitsCovered">&nbsp;246</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> DetailAST prevSibling = variableUsage.getPreviousSibling();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;515</td>  <td class="nbHitsCovered"><a title="Line 515: Conditional coverage 100% (2/2).">&nbsp;246</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 515: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (prevSibling != <span class="keyword">null</span></a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;516</td>  <td class="nbHitsCovered"><a title="Line 516: Conditional coverage 100% (2/2).">&nbsp;131</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 516: Conditional coverage 100% (2/2).">                    &amp;&amp; prevSibling.getType() == TokenTypes.LITERAL_THIS) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;514</td>  <td class="nbHitsCovered">&nbsp;254</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> DetailAST prevSibling = variableUsage.getPreviousSibling();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;515</td>  <td class="nbHitsCovered"><a title="Line 515: Conditional coverage 100% (2/2).">&nbsp;254</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 515: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (prevSibling != <span class="keyword">null</span></a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;516</td>  <td class="nbHitsCovered"><a title="Line 516: Conditional coverage 100% (2/2).">&nbsp;129</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 516: Conditional coverage 100% (2/2).">                    &amp;&amp; prevSibling.getType() == TokenTypes.LITERAL_THIS) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;517</td>  <td class="nbHitsCovered">&nbsp;25</td>  <td class="src"><pre class="src">&nbsp;                userDefinedArrangementOfThis = <span class="keyword">true</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;518</td>  <td class="nbHitsCovered">&nbsp;25</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">break</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;519</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;520</td>  <td class="nbHitsCovered">&nbsp;221</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;520</td>  <td class="nbHitsCovered">&nbsp;229</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;521</td>  <td class="nbHitsCovered">&nbsp;83</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> userDefinedArrangementOfThis;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;522</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
@@ -928,12 +928,12 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;557</td>  <td class="nbHitsCovered">&nbsp;51</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">boolean</span> returnedVariable = <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;558</td>  <td class="nbHitsCovered"><a title="Line 558: Conditional coverage 100% (2/2).">&nbsp;51</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 558: Conditional coverage 100% (2/2).">        <span class="keyword">for</span> (DetailAST returnToken : returnsInsideBlock) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;559</td>  <td class="nbHitsCovered">&nbsp;24</td>  <td class="src"><pre class="src">&nbsp;            returnedVariable = returnToken.findAll(ident).hasMoreNodes();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;560</td>  <td class="nbHitsCovered"><a title="Line 560: Conditional coverage 100% (2/2).">&nbsp;24</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 560: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (returnedVariable) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;559</td>  <td class="nbHitsCovered">&nbsp;23</td>  <td class="src"><pre class="src">&nbsp;            returnedVariable = returnToken.findAll(ident).hasMoreNodes();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;560</td>  <td class="nbHitsCovered"><a title="Line 560: Conditional coverage 100% (2/2).">&nbsp;23</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 560: Conditional coverage 100% (2/2).">            <span class="keyword">if</span> (returnedVariable) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;561</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">break</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;562</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;563</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;563</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;564</td>  <td class="nbHitsCovered">&nbsp;51</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> returnedVariable;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;565</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
@@ -1710,12 +1710,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">protected</span> <span class="keyword">boolean</span> containsFieldOrVariableDef(Set&lt;DetailAST&gt; set, DetailAST ident) {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1034</td>  <td class="nbHitsCovered">&nbsp;3177</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">boolean</span> result = <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1035</td>  <td class="nbHitsCovered"><a title="Line 1035: Conditional coverage 100% (2/2).">&nbsp;3177</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1035: Conditional coverage 100% (2/2).">            <span class="keyword">for</span> (DetailAST ast: set) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1036</td>  <td class="nbHitsCovered"><a title="Line 1036: Conditional coverage 100% (2/2).">&nbsp;6598</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1036: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (isProperDefinition(ident, ast)) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1036</td>  <td class="nbHitsCovered"><a title="Line 1036: Conditional coverage 100% (2/2).">&nbsp;5835</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1036: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (isProperDefinition(ident, ast)) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1037</td>  <td class="nbHitsCovered">&nbsp;1675</td>  <td class="src"><pre class="src">&nbsp;                    result = <span class="keyword">true</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1038</td>  <td class="nbHitsCovered">&nbsp;1675</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">break</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1039</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1040</td>  <td class="nbHitsCovered">&nbsp;4923</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1040</td>  <td class="nbHitsCovered">&nbsp;4160</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1041</td>  <td class="nbHitsCovered">&nbsp;3177</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> result;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1042</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -1735,8 +1735,8 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1050</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">protected</span> <span class="keyword">boolean</span> isProperDefinition(DetailAST ident, DetailAST ast) {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1051</td>  <td class="nbHitsCovered">&nbsp;1052</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> String nameToFind = ident.getText();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1052</td>  <td class="nbHitsCovered"><a title="Line 1052: Conditional coverage 100% (2/2).">&nbsp;2104</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1052: Conditional coverage 100% (2/2).">            <span class="keyword">return</span> nameToFind.equals(ast.getText())</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1051</td>  <td class="nbHitsCovered">&nbsp;1048</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> String nameToFind = ident.getText();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1052</td>  <td class="nbHitsCovered"><a title="Line 1052: Conditional coverage 100% (2/2).">&nbsp;2096</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1052: Conditional coverage 100% (2/2).">            <span class="keyword">return</span> nameToFind.equals(ast.getText())</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1053</td>  <td class="nbHitsCovered"><a title="Line 1053: Conditional coverage 100% (2/2).">&nbsp;645</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1053: Conditional coverage 100% (2/2).">                &amp;&amp; checkPosition(ast, ident);</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1054</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -2036,14 +2036,14 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> hasFinalField(<span class="keyword">final</span> DetailAST instanceMember) {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1217</td>  <td class="nbHitsCovered">&nbsp;48</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">boolean</span> result = <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1218</td>  <td class="nbHitsCovered"><a title="Line 1218: Conditional coverage 100% (2/2).">&nbsp;48</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1218: Conditional coverage 100% (2/2).">            <span class="keyword">for</span> (DetailAST member : instanceMembers) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1219</td>  <td class="nbHitsCovered">&nbsp;368</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> DetailAST mods = member.getParent().findFirstToken(TokenTypes.MODIFIERS);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1220</td>  <td class="nbHitsCovered">&nbsp;368</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> <span class="keyword">boolean</span> finalMod = mods.branchContains(TokenTypes.FINAL);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1221</td>  <td class="nbHitsCovered"><a title="Line 1221: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">&nbsp;368</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1221: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">                <span class="keyword">if</span> (finalMod &amp;&amp; member.equals(instanceMember)) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1219</td>  <td class="nbHitsCovered">&nbsp;385</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> DetailAST mods = member.getParent().findFirstToken(TokenTypes.MODIFIERS);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1220</td>  <td class="nbHitsCovered">&nbsp;385</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> <span class="keyword">boolean</span> finalMod = mods.branchContains(TokenTypes.FINAL);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1221</td>  <td class="nbHitsCovered"><a title="Line 1221: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">&nbsp;385</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1221: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">                <span class="keyword">if</span> (finalMod &amp;&amp; member.equals(instanceMember)) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1222</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                    result = <span class="keyword">true</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1223</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">break</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1224</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1225</td>  <td class="nbHitsCovered">&nbsp;361</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1225</td>  <td class="nbHitsCovered">&nbsp;378</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1226</td>  <td class="nbHitsCovered">&nbsp;48</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> result;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1227</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -2063,8 +2063,8 @@
   <td class="src"><pre class="src">&nbsp;        @Override</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1236</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">protected</span> <span class="keyword">boolean</span> isProperDefinition(DetailAST ident, DetailAST ast) {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1237</td>  <td class="nbHitsCovered">&nbsp;5546</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> String nameToFind = ident.getText();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1238</td>  <td class="nbHitsCovered">&nbsp;5546</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> nameToFind.equals(ast.getText());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1237</td>  <td class="nbHitsCovered">&nbsp;4787</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> String nameToFind = ident.getText();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1238</td>  <td class="nbHitsCovered">&nbsp;4787</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> nameToFind.equals(ast.getText());</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1239</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1240</td>  <td class="nbHits">&nbsp;</td>
@@ -2128,12 +2128,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> containsMethodDef(Set&lt;DetailAST&gt; set, DetailAST ident) {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1274</td>  <td class="nbHitsCovered">&nbsp;448</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">boolean</span> result = <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1275</td>  <td class="nbHitsCovered"><a title="Line 1275: Conditional coverage 100% (2/2).">&nbsp;448</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1275: Conditional coverage 100% (2/2).">            <span class="keyword">for</span> (DetailAST ast: set) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1276</td>  <td class="nbHitsCovered"><a title="Line 1276: Conditional coverage 100% (2/2).">&nbsp;11152</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1276: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (isSimilarSignature(ident, ast)) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1276</td>  <td class="nbHitsCovered"><a title="Line 1276: Conditional coverage 100% (2/2).">&nbsp;11055</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1276: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (isSimilarSignature(ident, ast)) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1277</td>  <td class="nbHitsCovered">&nbsp;62</td>  <td class="src"><pre class="src">&nbsp;                    result = <span class="keyword">true</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1278</td>  <td class="nbHitsCovered">&nbsp;62</td>  <td class="src"><pre class="src">&nbsp;                    <span class="keyword">break</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1279</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1280</td>  <td class="nbHitsCovered">&nbsp;11090</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1280</td>  <td class="nbHitsCovered">&nbsp;10993</td>  <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1281</td>  <td class="nbHitsCovered">&nbsp;448</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> result;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1282</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -2155,16 +2155,16 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1291</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> isSimilarSignature(DetailAST ident, DetailAST ast) {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1292</td>  <td class="nbHitsCovered">&nbsp;11152</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">boolean</span> result = <span class="keyword">false</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1293</td>  <td class="nbHitsCovered">&nbsp;11152</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> DetailAST elistToken = ident.getParent().findFirstToken(TokenTypes.ELIST);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1294</td>  <td class="nbHitsCovered"><a title="Line 1294: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">&nbsp;11152</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1294: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">            <span class="keyword">if</span> (elistToken != <span class="keyword">null</span> &amp;&amp; ident.getText().equals(ast.getText())) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1292</td>  <td class="nbHitsCovered">&nbsp;11055</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">boolean</span> result = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1293</td>  <td class="nbHitsCovered">&nbsp;11055</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">final</span> DetailAST elistToken = ident.getParent().findFirstToken(TokenTypes.ELIST);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1294</td>  <td class="nbHitsCovered"><a title="Line 1294: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">&nbsp;11055</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1294: Conditional coverage 100% (4/4) [each condition: 100%, 100%].">            <span class="keyword">if</span> (elistToken != <span class="keyword">null</span> &amp;&amp; ident.getText().equals(ast.getText())) {</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1295</td>  <td class="nbHitsCovered">&nbsp;68</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> <span class="keyword">int</span> paramsNumber =</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1296</td>  <td class="nbHitsCovered">&nbsp;68</td>  <td class="src"><pre class="src">&nbsp;                    ast.getParent().findFirstToken(TokenTypes.PARAMETERS).getChildCount();</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1297</td>  <td class="nbHitsCovered">&nbsp;68</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">final</span> <span class="keyword">int</span> argsNumber = elistToken.getChildCount();</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1298</td>  <td class="nbHitsCovered"><a title="Line 1298: Conditional coverage 100% (2/2).">&nbsp;68</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1298: Conditional coverage 100% (2/2).">                result = paramsNumber == argsNumber;</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1299</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1300</td>  <td class="nbHitsCovered">&nbsp;11152</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> result;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1300</td>  <td class="nbHitsCovered">&nbsp;11055</td>  <td class="src"><pre class="src">&nbsp;            <span class="keyword">return</span> result;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1301</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1302</td>  <td class="nbHits">&nbsp;</td>
@@ -2256,6 +2256,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 6/13/17 7:26 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 6/13/17 7:44 PM.</div>
 </body>
 </html>
