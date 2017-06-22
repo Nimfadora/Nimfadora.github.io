@@ -3,58 +3,58 @@
 
     <style type='text/css'>
 
-   .tests{
-     width : 50%;
-     float : left;
-   }
+        .tests{
+            width : 50%;
+            float : left;
+        }
 
-   .mutees{
-     float : right;
-     width : 50%;
-   }
+        .mutees{
+            float : right;
+            width : 50%;
+        }
 
-   .unit {
-     padding-top : 20px;
-     clear : both;
-   }
+        .unit {
+            padding-top : 20px;
+            clear : both;
+        }
 
-   .coverage_bar {
-    display : inline-block;
-    height : 1.1em;
-    width: 130px;
-    background: #FAA;
-    margin: 0 5px;
-    vertical-align: middle;
-    border: 1px solid #AAA;
-    position : relative;
-   }
+        .coverage_bar {
+            display : inline-block;
+            height : 1.1em;
+            width: 130px;
+            background: #FAA;
+            margin: 0 5px;
+            vertical-align: middle;
+            border: 1px solid #AAA;
+            position : relative;
+        }
 
-   .coverage_complete {
-    display : inline-block;
-    height : 100%;
-    background: #DFD;
-    float: left;
-   }
+        .coverage_complete {
+            display : inline-block;
+            height : 100%;
+            background: #DFD;
+            float: left;
+        }
 
-   .coverage_ledgend {
-        position : absolute;
-        height : 100%;
-        width : 100%;
-        left : 0;
-        top : 0;
-        text-align : center;
-   }
+        .coverage_ledgend {
+            position : absolute;
+            height : 100%;
+            width : 100%;
+            left : 0;
+            top : 0;
+            text-align : center;
+        }
 
-   .line, .mut {
-        vertical-align : middle;
-   }
+        .line, .mut {
+            vertical-align : middle;
+        }
 
-   .coveragePercentage {
-    display: inline-block;
-    width: 3em;
-    text-align: right;
-   }
-  </style>
+        .coveragePercentage {
+            display: inline-block;
+            width: 3em;
+            text-align: right;
+        }
+    </style>
 
 </head>
 <body>
@@ -64,18 +64,18 @@
 <h3>Project Summary</h3>
 <table>
     <thead>
-        <tr>
-            <th>Number of Classes</th>
-            <th>Line Coverage</th>
-            <th>Mutation Coverage</th>
-        </tr>
+    <tr>
+        <th>Number of Classes</th>
+        <th>Line Coverage</th>
+        <th>Mutation Coverage</th>
+    </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>13</td>
-            <td>100% <div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">1198/1203</div></div></td>
-            <td>84% <div class="coverage_bar"><div class="coverage_complete" style="width:84%"></div><div class="coverage_ledgend">342/406</div></div></td>
-        </tr>
+    <tr>
+        <td>13</td>
+        <td>100% <div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">1216/1221</div></div></td>
+        <td>90% <div class="coverage_bar"><div class="coverage_complete" style="width:90%"></div><div class="coverage_ledgend">368/411</div></div></td>
+    </tr>
     </tbody>
 </table>
 
@@ -83,37 +83,37 @@
 <h3>Breakdown by Package</h3>
 <table>
     <thead>
-        <tr>
-            <th>Name</th>
-            <th>Number of Classes</th>
-            <th>Line Coverage</th>
-            <th>Mutation Coverage</th>
-        </tr>
+    <tr>
+        <th>Name</th>
+        <th>Number of Classes</th>
+        <th>Line Coverage</th>
+        <th>Mutation Coverage</th>
+    </tr>
     </thead>
     <tbody>
 
-        <tr>
-            <td><a href="pr/com.puppycrawl.tools.checkstyle/index.html">com.puppycrawl.tools.checkstyle</a></td>
-            <td>11</td>
-            <td><div class="coveragePercentage">99% </div><div class="coverage_bar"><div class="coverage_complete" style="width:99%"></div><div class="coverage_ledgend">916/921</div></div></td>
-            <td><div class="coveragePercentage">87% </div><div class="coverage_bar"><div class="coverage_complete" style="width:87%"></div><div class="coverage_ledgend">244/279</div></div></td>
-        </tr>
+    <tr>
+        <td><a href="./pr/com.puppycrawl.tools.checkstyle/index.html">com.puppycrawl.tools.checkstyle</a></td>
+        <td>11</td>
+        <td><div class="coveragePercentage">99% </div><div class="coverage_bar"><div class="coverage_complete" style="width:99%"></div><div class="coverage_ledgend">935/940</div></div></td>
+        <td><div class="coveragePercentage">91% </div><div class="coverage_bar"><div class="coverage_complete" style="width:91%"></div><div class="coverage_ledgend">257/283</div></div></td>
+    </tr>
 
-        <tr>
-            <td><a href="pr/com.puppycrawl.tools.checkstyle.ant/index.html">com.puppycrawl.tools.checkstyle.ant</a></td>
-            <td>1</td>
-            <td><div class="coveragePercentage">100% </div><div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">242/242</div></div></td>
-            <td><div class="coveragePercentage">72% </div><div class="coverage_bar"><div class="coverage_complete" style="width:72%"></div><div class="coverage_ledgend">71/98</div></div></td>
-        </tr>
+    <tr>
+        <td><a href="./pr/com.puppycrawl.tools.checkstyle.ant/index.html">com.puppycrawl.tools.checkstyle.ant</a></td>
+        <td>1</td>
+        <td><div class="coveragePercentage">100% </div><div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">241/241</div></div></td>
+        <td><div class="coveragePercentage">85% </div><div class="coverage_bar"><div class="coverage_complete" style="width:85%"></div><div class="coverage_ledgend">84/99</div></div></td>
+    </tr>
 
-        <tr>
-            <td><a href="pr/com.puppycrawl.tools.checkstyle.doclets/index.html">com.puppycrawl.tools.checkstyle.doclets</a></td>
-            <td>1</td>
-            <td><div class="coveragePercentage">100% </div><div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">40/40</div></div></td>
-            <td><div class="coveragePercentage">93% </div><div class="coverage_bar"><div class="coverage_complete" style="width:93%"></div><div class="coverage_ledgend">27/29</div></div></td>
-        </tr>
+    <tr>
+        <td><a href="./pr/com.puppycrawl.tools.checkstyle.doclets/index.html">com.puppycrawl.tools.checkstyle.doclets</a></td>
+        <td>1</td>
+        <td><div class="coveragePercentage">100% </div><div class="coverage_bar"><div class="coverage_complete" style="width:100%"></div><div class="coverage_ledgend">40/40</div></div></td>
+        <td><div class="coveragePercentage">93% </div><div class="coverage_bar"><div class="coverage_complete" style="width:93%"></div><div class="coverage_ledgend">27/29</div></div></td>
+    </tr>
 
-     </tbody>
+    </tbody>
 </table>
 <br/>
 
