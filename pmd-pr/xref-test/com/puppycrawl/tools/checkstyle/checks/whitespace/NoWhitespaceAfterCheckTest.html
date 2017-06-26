@@ -231,28 +231,29 @@
 <a class="jxr_linenumber" name="L223" href="#L223">223</a>             fail(<span class="jxr_string">"no intended exception thrown"</span>);
 <a class="jxr_linenumber" name="L224" href="#L224">224</a>         }
 <a class="jxr_linenumber" name="L225" href="#L225">225</a>         <strong class="jxr_keyword">catch</strong> (IllegalStateException ex) {
-<a class="jxr_linenumber" name="L226" href="#L226">226</a>             assertEquals(<span class="jxr_string">"unexpected ast syntax import[0x-1]"</span>, ex.getMessage());
-<a class="jxr_linenumber" name="L227" href="#L227">227</a>         }
-<a class="jxr_linenumber" name="L228" href="#L228">228</a>     }
-<a class="jxr_linenumber" name="L229" href="#L229">229</a> 
-<a class="jxr_linenumber" name="L230" href="#L230">230</a>     <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="L231" href="#L231">231</a> <em class="jxr_javadoccomment">     * Creates MOCK lexical token and returns AST node for this token</em>
-<a class="jxr_linenumber" name="L232" href="#L232">232</a> <em class="jxr_javadoccomment">     * @param tokenType type of token</em>
-<a class="jxr_linenumber" name="L233" href="#L233">233</a> <em class="jxr_javadoccomment">     * @param tokenText text of token</em>
-<a class="jxr_linenumber" name="L234" href="#L234">234</a> <em class="jxr_javadoccomment">     * @param tokenFileName file name of token</em>
-<a class="jxr_linenumber" name="L235" href="#L235">235</a> <em class="jxr_javadoccomment">     * @return AST node for the token</em>
-<a class="jxr_linenumber" name="L236" href="#L236">236</a> <em class="jxr_javadoccomment">     */</em>
-<a class="jxr_linenumber" name="L237" href="#L237">237</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> DetailAST mockAST(<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> tokenType, <strong class="jxr_keyword">final</strong> String tokenText,
-<a class="jxr_linenumber" name="L238" href="#L238">238</a>             <strong class="jxr_keyword">final</strong> String tokenFileName) {
-<a class="jxr_linenumber" name="L239" href="#L239">239</a>         <strong class="jxr_keyword">final</strong> CommonHiddenStreamToken tokenImportSemi = <strong class="jxr_keyword">new</strong> CommonHiddenStreamToken();
-<a class="jxr_linenumber" name="L240" href="#L240">240</a>         tokenImportSemi.setType(tokenType);
-<a class="jxr_linenumber" name="L241" href="#L241">241</a>         tokenImportSemi.setText(tokenText);
-<a class="jxr_linenumber" name="L242" href="#L242">242</a>         tokenImportSemi.setFilename(tokenFileName);
-<a class="jxr_linenumber" name="L243" href="#L243">243</a>         <strong class="jxr_keyword">final</strong> DetailAST astSemi = <strong class="jxr_keyword">new</strong> DetailAST();
-<a class="jxr_linenumber" name="L244" href="#L244">244</a>         astSemi.initialize(tokenImportSemi);
-<a class="jxr_linenumber" name="L245" href="#L245">245</a>         <strong class="jxr_keyword">return</strong> astSemi;
-<a class="jxr_linenumber" name="L246" href="#L246">246</a>     }
-<a class="jxr_linenumber" name="L247" href="#L247">247</a> }
+<a class="jxr_linenumber" name="L226" href="#L226">226</a>             assertEquals(<span class="jxr_string">"Invalid exception message"</span>,
+<a class="jxr_linenumber" name="L227" href="#L227">227</a>                 <span class="jxr_string">"unexpected ast syntax import[0x-1]"</span>, ex.getMessage());
+<a class="jxr_linenumber" name="L228" href="#L228">228</a>         }
+<a class="jxr_linenumber" name="L229" href="#L229">229</a>     }
+<a class="jxr_linenumber" name="L230" href="#L230">230</a> 
+<a class="jxr_linenumber" name="L231" href="#L231">231</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L232" href="#L232">232</a> <em class="jxr_javadoccomment">     * Creates MOCK lexical token and returns AST node for this token</em>
+<a class="jxr_linenumber" name="L233" href="#L233">233</a> <em class="jxr_javadoccomment">     * @param tokenType type of token</em>
+<a class="jxr_linenumber" name="L234" href="#L234">234</a> <em class="jxr_javadoccomment">     * @param tokenText text of token</em>
+<a class="jxr_linenumber" name="L235" href="#L235">235</a> <em class="jxr_javadoccomment">     * @param tokenFileName file name of token</em>
+<a class="jxr_linenumber" name="L236" href="#L236">236</a> <em class="jxr_javadoccomment">     * @return AST node for the token</em>
+<a class="jxr_linenumber" name="L237" href="#L237">237</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="L238" href="#L238">238</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> DetailAST mockAST(<strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">int</strong> tokenType, <strong class="jxr_keyword">final</strong> String tokenText,
+<a class="jxr_linenumber" name="L239" href="#L239">239</a>             <strong class="jxr_keyword">final</strong> String tokenFileName) {
+<a class="jxr_linenumber" name="L240" href="#L240">240</a>         <strong class="jxr_keyword">final</strong> CommonHiddenStreamToken tokenImportSemi = <strong class="jxr_keyword">new</strong> CommonHiddenStreamToken();
+<a class="jxr_linenumber" name="L241" href="#L241">241</a>         tokenImportSemi.setType(tokenType);
+<a class="jxr_linenumber" name="L242" href="#L242">242</a>         tokenImportSemi.setText(tokenText);
+<a class="jxr_linenumber" name="L243" href="#L243">243</a>         tokenImportSemi.setFilename(tokenFileName);
+<a class="jxr_linenumber" name="L244" href="#L244">244</a>         <strong class="jxr_keyword">final</strong> DetailAST astSemi = <strong class="jxr_keyword">new</strong> DetailAST();
+<a class="jxr_linenumber" name="L245" href="#L245">245</a>         astSemi.initialize(tokenImportSemi);
+<a class="jxr_linenumber" name="L246" href="#L246">246</a>         <strong class="jxr_keyword">return</strong> astSemi;
+<a class="jxr_linenumber" name="L247" href="#L247">247</a>     }
+<a class="jxr_linenumber" name="L248" href="#L248">248</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2001&#x2013;2017. All rights reserved.</div>

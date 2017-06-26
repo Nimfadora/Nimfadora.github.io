@@ -260,74 +260,75 @@
 <a class="jxr_linenumber" name="L252" href="#L252">252</a>                 0, 1, <span class="jxr_string">"text"</span>, false, <strong class="jxr_keyword">new</strong> SuppressionCommentFilter()
 <a class="jxr_linenumber" name="L253" href="#L253">253</a>         );
 <a class="jxr_linenumber" name="L254" href="#L254">254</a> 
-<a class="jxr_linenumber" name="L255" href="#L255">255</a>         assertEquals(<span class="jxr_string">"Tag[line=0; col=1; on=false; text='text']"</span>, tag.toString());
-<a class="jxr_linenumber" name="L256" href="#L256">256</a>     }
-<a class="jxr_linenumber" name="L257" href="#L257">257</a> 
-<a class="jxr_linenumber" name="L258" href="#L258">258</a>     @Test
-<a class="jxr_linenumber" name="L259" href="#L259">259</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testInvalidCheckFormat() <strong class="jxr_keyword">throws</strong> Exception {
-<a class="jxr_linenumber" name="L260" href="#L260">260</a>         <strong class="jxr_keyword">final</strong> DefaultConfiguration filterConfig =
-<a class="jxr_linenumber" name="L261" href="#L261">261</a>             createFilterConfig(SuppressionCommentFilter.<strong class="jxr_keyword">class</strong>);
-<a class="jxr_linenumber" name="L262" href="#L262">262</a>         filterConfig.addAttribute(<span class="jxr_string">"checkFormat"</span>, <span class="jxr_string">"e[l"</span>);
-<a class="jxr_linenumber" name="L263" href="#L263">263</a> 
-<a class="jxr_linenumber" name="L264" href="#L264">264</a>         <strong class="jxr_keyword">try</strong> {
-<a class="jxr_linenumber" name="L265" href="#L265">265</a>             <strong class="jxr_keyword">final</strong> String[] suppressed = CommonUtils.EMPTY_STRING_ARRAY;
-<a class="jxr_linenumber" name="L266" href="#L266">266</a>             verifySuppressed(filterConfig, suppressed);
-<a class="jxr_linenumber" name="L267" href="#L267">267</a>         }
-<a class="jxr_linenumber" name="L268" href="#L268">268</a>         <strong class="jxr_keyword">catch</strong> (CheckstyleException ex) {
-<a class="jxr_linenumber" name="L269" href="#L269">269</a>             <strong class="jxr_keyword">final</strong> IllegalArgumentException cause = (IllegalArgumentException) ex.getCause();
-<a class="jxr_linenumber" name="L270" href="#L270">270</a>             assertEquals(<span class="jxr_string">"unable to parse expanded comment e[l"</span>,
-<a class="jxr_linenumber" name="L271" href="#L271">271</a>                     cause.getMessage());
-<a class="jxr_linenumber" name="L272" href="#L272">272</a>         }
-<a class="jxr_linenumber" name="L273" href="#L273">273</a>     }
-<a class="jxr_linenumber" name="L274" href="#L274">274</a> 
-<a class="jxr_linenumber" name="L275" href="#L275">275</a>     @Test
-<a class="jxr_linenumber" name="L276" href="#L276">276</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testInvalidMessageFormat() <strong class="jxr_keyword">throws</strong> Exception {
-<a class="jxr_linenumber" name="L277" href="#L277">277</a>         <strong class="jxr_keyword">final</strong> DefaultConfiguration filterConfig =
-<a class="jxr_linenumber" name="L278" href="#L278">278</a>             createFilterConfig(SuppressionCommentFilter.<strong class="jxr_keyword">class</strong>);
-<a class="jxr_linenumber" name="L279" href="#L279">279</a>         filterConfig.addAttribute(<span class="jxr_string">"messageFormat"</span>, <span class="jxr_string">"e[l"</span>);
-<a class="jxr_linenumber" name="L280" href="#L280">280</a> 
-<a class="jxr_linenumber" name="L281" href="#L281">281</a>         <strong class="jxr_keyword">try</strong> {
-<a class="jxr_linenumber" name="L282" href="#L282">282</a>             <strong class="jxr_keyword">final</strong> String[] suppressed = CommonUtils.EMPTY_STRING_ARRAY;
-<a class="jxr_linenumber" name="L283" href="#L283">283</a>             verifySuppressed(filterConfig, suppressed);
-<a class="jxr_linenumber" name="L284" href="#L284">284</a>         }
-<a class="jxr_linenumber" name="L285" href="#L285">285</a>         <strong class="jxr_keyword">catch</strong> (CheckstyleException ex) {
-<a class="jxr_linenumber" name="L286" href="#L286">286</a>             <strong class="jxr_keyword">final</strong> IllegalArgumentException cause = (IllegalArgumentException) ex.getCause();
-<a class="jxr_linenumber" name="L287" href="#L287">287</a>             assertEquals(<span class="jxr_string">"unable to parse expanded comment e[l"</span>,
-<a class="jxr_linenumber" name="L288" href="#L288">288</a>                     cause.getMessage());
-<a class="jxr_linenumber" name="L289" href="#L289">289</a>         }
-<a class="jxr_linenumber" name="L290" href="#L290">290</a> 
-<a class="jxr_linenumber" name="L291" href="#L291">291</a>     }
-<a class="jxr_linenumber" name="L292" href="#L292">292</a> 
-<a class="jxr_linenumber" name="L293" href="#L293">293</a>     @Test
-<a class="jxr_linenumber" name="L294" href="#L294">294</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testAcceptNullLocalizedMessage() {
-<a class="jxr_linenumber" name="L295" href="#L295">295</a>         <strong class="jxr_keyword">final</strong> SuppressionCommentFilter filter = <strong class="jxr_keyword">new</strong> SuppressionCommentFilter();
-<a class="jxr_linenumber" name="L296" href="#L296">296</a>         <strong class="jxr_keyword">final</strong> AuditEvent auditEvent = <strong class="jxr_keyword">new</strong> AuditEvent(<strong class="jxr_keyword">this</strong>);
-<a class="jxr_linenumber" name="L297" href="#L297">297</a>         Assert.assertTrue(filter.accept(auditEvent));
-<a class="jxr_linenumber" name="L298" href="#L298">298</a>     }
-<a class="jxr_linenumber" name="L299" href="#L299">299</a> 
-<a class="jxr_linenumber" name="L300" href="#L300">300</a>     @Test
-<a class="jxr_linenumber" name="L301" href="#L301">301</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testSuppressById() <strong class="jxr_keyword">throws</strong> Exception {
-<a class="jxr_linenumber" name="L302" href="#L302">302</a>         <strong class="jxr_keyword">final</strong> DefaultConfiguration filterConfig =
-<a class="jxr_linenumber" name="L303" href="#L303">303</a>             createFilterConfig(SuppressionCommentFilter.<strong class="jxr_keyword">class</strong>);
-<a class="jxr_linenumber" name="L304" href="#L304">304</a>         filterConfig.addAttribute(<span class="jxr_string">"offCommentFormat"</span>, <span class="jxr_string">"CSOFF (&#92;&#92;w+) &#92;&#92;(&#92;&#92;w+&#92;&#92;)"</span>);
-<a class="jxr_linenumber" name="L305" href="#L305">305</a>         filterConfig.addAttribute(<span class="jxr_string">"onCommentFormat"</span>, <span class="jxr_string">"CSON (&#92;&#92;w+)"</span>);
-<a class="jxr_linenumber" name="L306" href="#L306">306</a>         filterConfig.addAttribute(<span class="jxr_string">"checkFormat"</span>, <span class="jxr_string">"$1"</span>);
-<a class="jxr_linenumber" name="L307" href="#L307">307</a>         <strong class="jxr_keyword">final</strong> String[] suppressedViolationMessages = {
-<a class="jxr_linenumber" name="L308" href="#L308">308</a>             <span class="jxr_string">"6:17: Name 'A1' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
-<a class="jxr_linenumber" name="L309" href="#L309">309</a>             <span class="jxr_string">"12:9: Name 'line_length' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
-<a class="jxr_linenumber" name="L310" href="#L310">310</a>             };
-<a class="jxr_linenumber" name="L311" href="#L311">311</a>         <strong class="jxr_keyword">final</strong> String[] expectedViolationMessages = {
-<a class="jxr_linenumber" name="L312" href="#L312">312</a>             <span class="jxr_string">"6:17: Name 'A1' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
-<a class="jxr_linenumber" name="L313" href="#L313">313</a>             <span class="jxr_string">"9:30: Name 'abc' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'."</span>,
-<a class="jxr_linenumber" name="L314" href="#L314">314</a>             <span class="jxr_string">"12:9: Name 'line_length' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
-<a class="jxr_linenumber" name="L315" href="#L315">315</a>             <span class="jxr_string">"15:18: Name 'ID' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
-<a class="jxr_linenumber" name="L316" href="#L316">316</a>             };
-<a class="jxr_linenumber" name="L317" href="#L317">317</a> 
-<a class="jxr_linenumber" name="L318" href="#L318">318</a>         verify(createChecker(filterConfig),
-<a class="jxr_linenumber" name="L319" href="#L319">319</a>             getPath(<span class="jxr_string">"InputSuppressByIdWithCommentFilter.java"</span>),
-<a class="jxr_linenumber" name="L320" href="#L320">320</a>             removeSuppressed(expectedViolationMessages, suppressedViolationMessages));
-<a class="jxr_linenumber" name="L321" href="#L321">321</a>     }
-<a class="jxr_linenumber" name="L322" href="#L322">322</a> }
+<a class="jxr_linenumber" name="L255" href="#L255">255</a>         assertEquals(<span class="jxr_string">"Invalid toString result"</span>,
+<a class="jxr_linenumber" name="L256" href="#L256">256</a>             <span class="jxr_string">"Tag[line=0; col=1; on=false; text='text']"</span>, tag.toString());
+<a class="jxr_linenumber" name="L257" href="#L257">257</a>     }
+<a class="jxr_linenumber" name="L258" href="#L258">258</a> 
+<a class="jxr_linenumber" name="L259" href="#L259">259</a>     @Test
+<a class="jxr_linenumber" name="L260" href="#L260">260</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testInvalidCheckFormat() <strong class="jxr_keyword">throws</strong> Exception {
+<a class="jxr_linenumber" name="L261" href="#L261">261</a>         <strong class="jxr_keyword">final</strong> DefaultConfiguration filterConfig =
+<a class="jxr_linenumber" name="L262" href="#L262">262</a>             createFilterConfig(SuppressionCommentFilter.<strong class="jxr_keyword">class</strong>);
+<a class="jxr_linenumber" name="L263" href="#L263">263</a>         filterConfig.addAttribute(<span class="jxr_string">"checkFormat"</span>, <span class="jxr_string">"e[l"</span>);
+<a class="jxr_linenumber" name="L264" href="#L264">264</a> 
+<a class="jxr_linenumber" name="L265" href="#L265">265</a>         <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L266" href="#L266">266</a>             <strong class="jxr_keyword">final</strong> String[] suppressed = CommonUtils.EMPTY_STRING_ARRAY;
+<a class="jxr_linenumber" name="L267" href="#L267">267</a>             verifySuppressed(filterConfig, suppressed);
+<a class="jxr_linenumber" name="L268" href="#L268">268</a>         }
+<a class="jxr_linenumber" name="L269" href="#L269">269</a>         <strong class="jxr_keyword">catch</strong> (CheckstyleException ex) {
+<a class="jxr_linenumber" name="L270" href="#L270">270</a>             <strong class="jxr_keyword">final</strong> IllegalArgumentException cause = (IllegalArgumentException) ex.getCause();
+<a class="jxr_linenumber" name="L271" href="#L271">271</a>             assertEquals(<span class="jxr_string">"Invalid exception message"</span>,
+<a class="jxr_linenumber" name="L272" href="#L272">272</a>                 <span class="jxr_string">"unable to parse expanded comment e[l"</span>, cause.getMessage());
+<a class="jxr_linenumber" name="L273" href="#L273">273</a>         }
+<a class="jxr_linenumber" name="L274" href="#L274">274</a>     }
+<a class="jxr_linenumber" name="L275" href="#L275">275</a> 
+<a class="jxr_linenumber" name="L276" href="#L276">276</a>     @Test
+<a class="jxr_linenumber" name="L277" href="#L277">277</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testInvalidMessageFormat() <strong class="jxr_keyword">throws</strong> Exception {
+<a class="jxr_linenumber" name="L278" href="#L278">278</a>         <strong class="jxr_keyword">final</strong> DefaultConfiguration filterConfig =
+<a class="jxr_linenumber" name="L279" href="#L279">279</a>             createFilterConfig(SuppressionCommentFilter.<strong class="jxr_keyword">class</strong>);
+<a class="jxr_linenumber" name="L280" href="#L280">280</a>         filterConfig.addAttribute(<span class="jxr_string">"messageFormat"</span>, <span class="jxr_string">"e[l"</span>);
+<a class="jxr_linenumber" name="L281" href="#L281">281</a> 
+<a class="jxr_linenumber" name="L282" href="#L282">282</a>         <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L283" href="#L283">283</a>             <strong class="jxr_keyword">final</strong> String[] suppressed = CommonUtils.EMPTY_STRING_ARRAY;
+<a class="jxr_linenumber" name="L284" href="#L284">284</a>             verifySuppressed(filterConfig, suppressed);
+<a class="jxr_linenumber" name="L285" href="#L285">285</a>         }
+<a class="jxr_linenumber" name="L286" href="#L286">286</a>         <strong class="jxr_keyword">catch</strong> (CheckstyleException ex) {
+<a class="jxr_linenumber" name="L287" href="#L287">287</a>             <strong class="jxr_keyword">final</strong> IllegalArgumentException cause = (IllegalArgumentException) ex.getCause();
+<a class="jxr_linenumber" name="L288" href="#L288">288</a>             assertEquals(<span class="jxr_string">"Invalid exception message"</span>,
+<a class="jxr_linenumber" name="L289" href="#L289">289</a>                 <span class="jxr_string">"unable to parse expanded comment e[l"</span>, cause.getMessage());
+<a class="jxr_linenumber" name="L290" href="#L290">290</a>         }
+<a class="jxr_linenumber" name="L291" href="#L291">291</a> 
+<a class="jxr_linenumber" name="L292" href="#L292">292</a>     }
+<a class="jxr_linenumber" name="L293" href="#L293">293</a> 
+<a class="jxr_linenumber" name="L294" href="#L294">294</a>     @Test
+<a class="jxr_linenumber" name="L295" href="#L295">295</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testAcceptNullLocalizedMessage() {
+<a class="jxr_linenumber" name="L296" href="#L296">296</a>         <strong class="jxr_keyword">final</strong> SuppressionCommentFilter filter = <strong class="jxr_keyword">new</strong> SuppressionCommentFilter();
+<a class="jxr_linenumber" name="L297" href="#L297">297</a>         <strong class="jxr_keyword">final</strong> AuditEvent auditEvent = <strong class="jxr_keyword">new</strong> AuditEvent(<strong class="jxr_keyword">this</strong>);
+<a class="jxr_linenumber" name="L298" href="#L298">298</a>         Assert.assertTrue(filter.accept(auditEvent));
+<a class="jxr_linenumber" name="L299" href="#L299">299</a>     }
+<a class="jxr_linenumber" name="L300" href="#L300">300</a> 
+<a class="jxr_linenumber" name="L301" href="#L301">301</a>     @Test
+<a class="jxr_linenumber" name="L302" href="#L302">302</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testSuppressById() <strong class="jxr_keyword">throws</strong> Exception {
+<a class="jxr_linenumber" name="L303" href="#L303">303</a>         <strong class="jxr_keyword">final</strong> DefaultConfiguration filterConfig =
+<a class="jxr_linenumber" name="L304" href="#L304">304</a>             createFilterConfig(SuppressionCommentFilter.<strong class="jxr_keyword">class</strong>);
+<a class="jxr_linenumber" name="L305" href="#L305">305</a>         filterConfig.addAttribute(<span class="jxr_string">"offCommentFormat"</span>, <span class="jxr_string">"CSOFF (&#92;&#92;w+) &#92;&#92;(&#92;&#92;w+&#92;&#92;)"</span>);
+<a class="jxr_linenumber" name="L306" href="#L306">306</a>         filterConfig.addAttribute(<span class="jxr_string">"onCommentFormat"</span>, <span class="jxr_string">"CSON (&#92;&#92;w+)"</span>);
+<a class="jxr_linenumber" name="L307" href="#L307">307</a>         filterConfig.addAttribute(<span class="jxr_string">"checkFormat"</span>, <span class="jxr_string">"$1"</span>);
+<a class="jxr_linenumber" name="L308" href="#L308">308</a>         <strong class="jxr_keyword">final</strong> String[] suppressedViolationMessages = {
+<a class="jxr_linenumber" name="L309" href="#L309">309</a>             <span class="jxr_string">"6:17: Name 'A1' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
+<a class="jxr_linenumber" name="L310" href="#L310">310</a>             <span class="jxr_string">"12:9: Name 'line_length' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
+<a class="jxr_linenumber" name="L311" href="#L311">311</a>             };
+<a class="jxr_linenumber" name="L312" href="#L312">312</a>         <strong class="jxr_keyword">final</strong> String[] expectedViolationMessages = {
+<a class="jxr_linenumber" name="L313" href="#L313">313</a>             <span class="jxr_string">"6:17: Name 'A1' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
+<a class="jxr_linenumber" name="L314" href="#L314">314</a>             <span class="jxr_string">"9:30: Name 'abc' must match pattern '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'."</span>,
+<a class="jxr_linenumber" name="L315" href="#L315">315</a>             <span class="jxr_string">"12:9: Name 'line_length' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
+<a class="jxr_linenumber" name="L316" href="#L316">316</a>             <span class="jxr_string">"15:18: Name 'ID' must match pattern '^[a-z][a-zA-Z0-9]*$'."</span>,
+<a class="jxr_linenumber" name="L317" href="#L317">317</a>             };
+<a class="jxr_linenumber" name="L318" href="#L318">318</a> 
+<a class="jxr_linenumber" name="L319" href="#L319">319</a>         verify(createChecker(filterConfig),
+<a class="jxr_linenumber" name="L320" href="#L320">320</a>             getPath(<span class="jxr_string">"InputSuppressByIdWithCommentFilter.java"</span>),
+<a class="jxr_linenumber" name="L321" href="#L321">321</a>             removeSuppressed(expectedViolationMessages, suppressedViolationMessages));
+<a class="jxr_linenumber" name="L322" href="#L322">322</a>     }
+<a class="jxr_linenumber" name="L323" href="#L323">323</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2001&#x2013;2017. All rights reserved.</div>

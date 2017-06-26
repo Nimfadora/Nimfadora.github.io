@@ -53,27 +53,27 @@
 <a class="jxr_linenumber" name="L45" href="#L45">45</a>      @Test
 <a class="jxr_linenumber" name="L46" href="#L46">46</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testSupportedCharset() <strong class="jxr_keyword">throws</strong> IOException {
 <a class="jxr_linenumber" name="L47" href="#L47">47</a>          <strong class="jxr_keyword">final</strong> String charsetName = <span class="jxr_string">"ISO-8859-1"</span>;
-<a class="jxr_linenumber" name="L48" href="#L48">48</a>          <strong class="jxr_keyword">final</strong> FileText o = <strong class="jxr_keyword">new</strong> FileText(<strong class="jxr_keyword">new</strong> File(<span class="jxr_string">"src/test/resources/com/puppycrawl/tools/"</span>
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>          <strong class="jxr_keyword">final</strong> FileText fileText = <strong class="jxr_keyword">new</strong> FileText(<strong class="jxr_keyword">new</strong> File(<span class="jxr_string">"src/test/resources/com/puppycrawl/tools/"</span>
 <a class="jxr_linenumber" name="L49" href="#L49">49</a>                   + <span class="jxr_string">"checkstyle/api/import-control_complete.xml"</span>), charsetName);
-<a class="jxr_linenumber" name="L50" href="#L50">50</a>          assertEquals(charsetName, o.getCharset().name());
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>          assertEquals(charsetName, fileText.getCharset().name());
 <a class="jxr_linenumber" name="L51" href="#L51">51</a>      }
 <a class="jxr_linenumber" name="L52" href="#L52">52</a>  
 <a class="jxr_linenumber" name="L53" href="#L53">53</a>      @Test
 <a class="jxr_linenumber" name="L54" href="#L54">54</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testLineColumnBeforeCopyConstructor() <strong class="jxr_keyword">throws</strong> IOException {
 <a class="jxr_linenumber" name="L55" href="#L55">55</a>          <strong class="jxr_keyword">final</strong> String charsetName = <span class="jxr_string">"ISO-8859-1"</span>;
-<a class="jxr_linenumber" name="L56" href="#L56">56</a>          <strong class="jxr_keyword">final</strong> FileText o = <strong class="jxr_keyword">new</strong> FileText(<strong class="jxr_keyword">new</strong> File(<span class="jxr_string">"src/test/resources/com/puppycrawl/tools/"</span>
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>          <strong class="jxr_keyword">final</strong> FileText fileText = <strong class="jxr_keyword">new</strong> FileText(<strong class="jxr_keyword">new</strong> File(<span class="jxr_string">"src/test/resources/com/puppycrawl/tools/"</span>
 <a class="jxr_linenumber" name="L57" href="#L57">57</a>                   + <span class="jxr_string">"checkstyle/api/import-control_complete.xml"</span>), charsetName);
-<a class="jxr_linenumber" name="L58" href="#L58">58</a>          <strong class="jxr_keyword">final</strong> LineColumn lineColumn = o.lineColumn(100);
-<a class="jxr_linenumber" name="L59" href="#L59">59</a>          <strong class="jxr_keyword">final</strong> FileText copy = <strong class="jxr_keyword">new</strong> FileText(o);
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>          <strong class="jxr_keyword">final</strong> LineColumn lineColumn = fileText.lineColumn(100);
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>          <strong class="jxr_keyword">final</strong> FileText copy = <strong class="jxr_keyword">new</strong> FileText(fileText);
 <a class="jxr_linenumber" name="L60" href="#L60">60</a>          assertEquals(lineColumn, copy.lineColumn(100));
 <a class="jxr_linenumber" name="L61" href="#L61">61</a>      }
 <a class="jxr_linenumber" name="L62" href="#L62">62</a>  
 <a class="jxr_linenumber" name="L63" href="#L63">63</a>      @Test
 <a class="jxr_linenumber" name="L64" href="#L64">64</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testLineColumnAfterCopyConstructor() <strong class="jxr_keyword">throws</strong> IOException {
 <a class="jxr_linenumber" name="L65" href="#L65">65</a>          <strong class="jxr_keyword">final</strong> String charsetName = <span class="jxr_string">"ISO-8859-1"</span>;
-<a class="jxr_linenumber" name="L66" href="#L66">66</a>          <strong class="jxr_keyword">final</strong> FileText o = <strong class="jxr_keyword">new</strong> FileText(<strong class="jxr_keyword">new</strong> File(<span class="jxr_string">"src/test/resources/com/puppycrawl/tools/"</span>
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>          <strong class="jxr_keyword">final</strong> FileText fileText = <strong class="jxr_keyword">new</strong> FileText(<strong class="jxr_keyword">new</strong> File(<span class="jxr_string">"src/test/resources/com/puppycrawl/tools/"</span>
 <a class="jxr_linenumber" name="L67" href="#L67">67</a>                   + <span class="jxr_string">"checkstyle/api/import-control_complete.xml"</span>), charsetName);
-<a class="jxr_linenumber" name="L68" href="#L68">68</a>          <strong class="jxr_keyword">final</strong> FileText copy = <strong class="jxr_keyword">new</strong> FileText(o);
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>          <strong class="jxr_keyword">final</strong> FileText copy = <strong class="jxr_keyword">new</strong> FileText(fileText);
 <a class="jxr_linenumber" name="L69" href="#L69">69</a>          assertEquals(3, copy.lineColumn(100).getLine());
 <a class="jxr_linenumber" name="L70" href="#L70">70</a>      }
 <a class="jxr_linenumber" name="L71" href="#L71">71</a>  }
