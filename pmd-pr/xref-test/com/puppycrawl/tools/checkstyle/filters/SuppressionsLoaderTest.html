@@ -282,36 +282,31 @@
 <a class="jxr_linenumber" name="L274" href="#L274">274</a>     @Test
 <a class="jxr_linenumber" name="L275" href="#L275">275</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testNoCheckYesId() <strong class="jxr_keyword">throws</strong> Exception {
 <a class="jxr_linenumber" name="L276" href="#L276">276</a>         <strong class="jxr_keyword">final</strong> String fn = getPath(<span class="jxr_string">"suppressions_id.xml"</span>);
-<a class="jxr_linenumber" name="L277" href="#L277">277</a>         <strong class="jxr_keyword">try</strong> {
-<a class="jxr_linenumber" name="L278" href="#L278">278</a>             SuppressionsLoader.loadSuppressions(fn);
-<a class="jxr_linenumber" name="L279" href="#L279">279</a>         }
-<a class="jxr_linenumber" name="L280" href="#L280">280</a>         <strong class="jxr_keyword">catch</strong> (CheckstyleException ex) {
-<a class="jxr_linenumber" name="L281" href="#L281">281</a>             fail(<span class="jxr_string">"exception is not expected"</span>);
-<a class="jxr_linenumber" name="L282" href="#L282">282</a>         }
-<a class="jxr_linenumber" name="L283" href="#L283">283</a>     }
-<a class="jxr_linenumber" name="L284" href="#L284">284</a> 
-<a class="jxr_linenumber" name="L285" href="#L285">285</a>     @Test
-<a class="jxr_linenumber" name="L286" href="#L286">286</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testInvalidFileFormat() {
-<a class="jxr_linenumber" name="L287" href="#L287">287</a>         <strong class="jxr_keyword">final</strong> String fn = getPath(<span class="jxr_string">"suppressions_invalid_file.xml"</span>);
-<a class="jxr_linenumber" name="L288" href="#L288">288</a>         <strong class="jxr_keyword">try</strong> {
-<a class="jxr_linenumber" name="L289" href="#L289">289</a>             SuppressionsLoader.loadSuppressions(fn);
+<a class="jxr_linenumber" name="L277" href="#L277">277</a>         SuppressionsLoader.loadSuppressions(fn);
+<a class="jxr_linenumber" name="L278" href="#L278">278</a>     }
+<a class="jxr_linenumber" name="L279" href="#L279">279</a> 
+<a class="jxr_linenumber" name="L280" href="#L280">280</a>     @Test
+<a class="jxr_linenumber" name="L281" href="#L281">281</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testInvalidFileFormat() {
+<a class="jxr_linenumber" name="L282" href="#L282">282</a>         <strong class="jxr_keyword">final</strong> String fn = getPath(<span class="jxr_string">"suppressions_invalid_file.xml"</span>);
+<a class="jxr_linenumber" name="L283" href="#L283">283</a>         <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L284" href="#L284">284</a>             SuppressionsLoader.loadSuppressions(fn);
+<a class="jxr_linenumber" name="L285" href="#L285">285</a>         }
+<a class="jxr_linenumber" name="L286" href="#L286">286</a>         <strong class="jxr_keyword">catch</strong> (CheckstyleException ex) {
+<a class="jxr_linenumber" name="L287" href="#L287">287</a>             assertEquals(<span class="jxr_string">"Invalid error message"</span>,
+<a class="jxr_linenumber" name="L288" href="#L288">288</a>                 <span class="jxr_string">"Unable to parse "</span> + fn + <span class="jxr_string">" - invalid files or checks format"</span>,
+<a class="jxr_linenumber" name="L289" href="#L289">289</a>                 ex.getMessage());
 <a class="jxr_linenumber" name="L290" href="#L290">290</a>         }
-<a class="jxr_linenumber" name="L291" href="#L291">291</a>         <strong class="jxr_keyword">catch</strong> (CheckstyleException ex) {
-<a class="jxr_linenumber" name="L292" href="#L292">292</a>             assertEquals(<span class="jxr_string">"Invalid error message"</span>,
-<a class="jxr_linenumber" name="L293" href="#L293">293</a>                 <span class="jxr_string">"Unable to parse "</span> + fn + <span class="jxr_string">" - invalid files or checks format"</span>,
-<a class="jxr_linenumber" name="L294" href="#L294">294</a>                 ex.getMessage());
-<a class="jxr_linenumber" name="L295" href="#L295">295</a>         }
-<a class="jxr_linenumber" name="L296" href="#L296">296</a>     }
-<a class="jxr_linenumber" name="L297" href="#L297">297</a> 
-<a class="jxr_linenumber" name="L298" href="#L298">298</a>     @Test
-<a class="jxr_linenumber" name="L299" href="#L299">299</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testLoadFromClasspath()
-<a class="jxr_linenumber" name="L300" href="#L300">300</a>             <strong class="jxr_keyword">throws</strong> CheckstyleException {
-<a class="jxr_linenumber" name="L301" href="#L301">301</a>         <strong class="jxr_keyword">final</strong> FilterSet fc =
-<a class="jxr_linenumber" name="L302" href="#L302">302</a>             SuppressionsLoader.loadSuppressions(getPath(<span class="jxr_string">"suppressions_none.xml"</span>));
-<a class="jxr_linenumber" name="L303" href="#L303">303</a>         <strong class="jxr_keyword">final</strong> FilterSet fc2 = <strong class="jxr_keyword">new</strong> FilterSet();
-<a class="jxr_linenumber" name="L304" href="#L304">304</a>         assertEquals(<span class="jxr_string">"Suppressions were not loaded"</span>, fc2, fc);
-<a class="jxr_linenumber" name="L305" href="#L305">305</a>     }
-<a class="jxr_linenumber" name="L306" href="#L306">306</a> }
+<a class="jxr_linenumber" name="L291" href="#L291">291</a>     }
+<a class="jxr_linenumber" name="L292" href="#L292">292</a> 
+<a class="jxr_linenumber" name="L293" href="#L293">293</a>     @Test
+<a class="jxr_linenumber" name="L294" href="#L294">294</a>     <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testLoadFromClasspath()
+<a class="jxr_linenumber" name="L295" href="#L295">295</a>             <strong class="jxr_keyword">throws</strong> CheckstyleException {
+<a class="jxr_linenumber" name="L296" href="#L296">296</a>         <strong class="jxr_keyword">final</strong> FilterSet fc =
+<a class="jxr_linenumber" name="L297" href="#L297">297</a>             SuppressionsLoader.loadSuppressions(getPath(<span class="jxr_string">"suppressions_none.xml"</span>));
+<a class="jxr_linenumber" name="L298" href="#L298">298</a>         <strong class="jxr_keyword">final</strong> FilterSet fc2 = <strong class="jxr_keyword">new</strong> FilterSet();
+<a class="jxr_linenumber" name="L299" href="#L299">299</a>         assertEquals(<span class="jxr_string">"Suppressions were not loaded"</span>, fc2, fc);
+<a class="jxr_linenumber" name="L300" href="#L300">300</a>     }
+<a class="jxr_linenumber" name="L301" href="#L301">301</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2001&#x2013;2017. All rights reserved.</div>

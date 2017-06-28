@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>InputCommentsIndentationCommentIsAtTheEndOfBlock xref</title>
-<link type="text/css" rel="stylesheet" href="../../../../../../../stylesheet.css" />
+<link type="text/css" rel="stylesheet" href="../../../../../../stylesheet.css" />
 </head>
 <body>
-<div id="overview"><a href="../../../../../../../../testapidocs/com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">View Javadoc</a></div><pre>
-<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> com.puppycrawl.tools.checkstyle.checks.indentation.commentsindentation;
+<div id="overview"><a href="../../../../../../../testapidocs/com/puppycrawl/tools/checkstyle/checks/indentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> com.puppycrawl.tools.checkstyle.checks.indentation;
 <a class="jxr_linenumber" name="L2" href="#L2">2</a>   
 <a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> com.puppycrawl.tools.checkstyle.api.DetailAST;
 <a class="jxr_linenumber" name="L4" href="#L4">4</a>   <strong class="jxr_keyword">import</strong> com.puppycrawl.tools.checkstyle.utils.CheckUtils;
@@ -14,24 +14,24 @@
 <a class="jxr_linenumber" name="L6" href="#L6">6</a>   <em class="jxr_javadoccomment">/**</em>
 <a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_javadoccomment"> * Contains examples of using comments at the end of the block.</em>
 <a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_javadoccomment"> */</em>
-<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">InputCommentsIndentationCommentIsAtTheEndOfBlock</a> {
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">InputCommentsIndentationCommentIsAtTheEndOfBlock</a> {
 <a class="jxr_linenumber" name="L10" href="#L10">10</a>  
 <a class="jxr_linenumber" name="L11" href="#L11">11</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> foo1() {
-<a class="jxr_linenumber" name="L12" href="#L12">12</a>          foo2();
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>          <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputValidClassDefIndent.html">foo2</a>();
 <a class="jxr_linenumber" name="L13" href="#L13">13</a>          <em class="jxr_comment">// TODO: missing functionality</em>
 <a class="jxr_linenumber" name="L14" href="#L14">14</a>      }
 <a class="jxr_linenumber" name="L15" href="#L15">15</a>  
-<a class="jxr_linenumber" name="L16" href="#L16">16</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> foo2() {
-<a class="jxr_linenumber" name="L17" href="#L17">17</a>          foo3();
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputValidClassDefIndent.html">foo2</a>() {
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>          <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputValidClassDefIndent.html">foo3</a>();
 <a class="jxr_linenumber" name="L18" href="#L18">18</a>                           <em class="jxr_comment">// violation</em>
 <a class="jxr_linenumber" name="L19" href="#L19">19</a>      }
 <a class="jxr_linenumber" name="L20" href="#L20">20</a>  
-<a class="jxr_linenumber" name="L21" href="#L21">21</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> foo3() {
-<a class="jxr_linenumber" name="L22" href="#L22">22</a>          foo2();
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputValidClassDefIndent.html">foo3</a>() {
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>          <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputValidClassDefIndent.html">foo2</a>();
 <a class="jxr_linenumber" name="L23" href="#L23">23</a>          <em class="jxr_comment">// refreshDisplay();</em>
 <a class="jxr_linenumber" name="L24" href="#L24">24</a>      }
 <a class="jxr_linenumber" name="L25" href="#L25">25</a>  
-<a class="jxr_linenumber" name="L26" href="#L26">26</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> foo4() {
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputValidClassDefIndent.html">foo4</a>() {
 <a class="jxr_linenumber" name="L27" href="#L27">27</a>          foooooooooooooooooooooooooooooooooooooooooo();
 <a class="jxr_linenumber" name="L28" href="#L28">28</a>          <em class="jxr_comment">// ^-- some hint</em>
 <a class="jxr_linenumber" name="L29" href="#L29">29</a>      }
@@ -49,7 +49,7 @@
 <a class="jxr_linenumber" name="L41" href="#L41">41</a>  
 <a class="jxr_linenumber" name="L42" href="#L42">42</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> foo8() {}
 <a class="jxr_linenumber" name="L43" href="#L43">43</a>  
-<a class="jxr_linenumber" name="L44" href="#L44">44</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">TestClass</a> {
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">TestClass</a> {
 <a class="jxr_linenumber" name="L45" href="#L45">45</a>          <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> test() {
 <a class="jxr_linenumber" name="L46" href="#L46">46</a>              <strong class="jxr_keyword">int</strong> a = 0;
 <a class="jxr_linenumber" name="L47" href="#L47">47</a>                 <em class="jxr_comment">// violation</em>
@@ -534,28 +534,28 @@
 <a class="jxr_linenumber" name="L526" href="#L526">526</a>     }
 <a class="jxr_linenumber" name="L527" href="#L527">527</a> 
 <a class="jxr_linenumber" name="L528" href="#L528">528</a>     <strong class="jxr_keyword">void</strong> foo73() {
-<a class="jxr_linenumber" name="L529" href="#L529">529</a>         <strong class="jxr_keyword">class</strong> <a href="../../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">Foo</a> { }
+<a class="jxr_linenumber" name="L529" href="#L529">529</a>         <strong class="jxr_keyword">class</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputLambda1.html">Foo</a> { }
 <a class="jxr_linenumber" name="L530" href="#L530">530</a> 
 <a class="jxr_linenumber" name="L531" href="#L531">531</a> <em class="jxr_comment">/* comment */</em>
 <a class="jxr_linenumber" name="L532" href="#L532">532</a> <em class="jxr_comment">// violation</em>
 <a class="jxr_linenumber" name="L533" href="#L533">533</a>     }
 <a class="jxr_linenumber" name="L534" href="#L534">534</a> 
-<a class="jxr_linenumber" name="L535" href="#L535">535</a>     <strong class="jxr_keyword">interface</strong> <a href="../../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">Bar1</a> {
-<a class="jxr_linenumber" name="L536" href="#L536">536</a>         <strong class="jxr_keyword">interface</strong> <a href="../../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">NestedBar</a> { }
+<a class="jxr_linenumber" name="L535" href="#L535">535</a>     <strong class="jxr_keyword">interface</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">Bar1</a> {
+<a class="jxr_linenumber" name="L536" href="#L536">536</a>         <strong class="jxr_keyword">interface</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">NestedBar</a> { }
 <a class="jxr_linenumber" name="L537" href="#L537">537</a> 
 <a class="jxr_linenumber" name="L538" href="#L538">538</a> <em class="jxr_comment">// violation</em>
 <a class="jxr_linenumber" name="L539" href="#L539">539</a>     }
 <a class="jxr_linenumber" name="L540" href="#L540">540</a> 
-<a class="jxr_linenumber" name="L541" href="#L541">541</a>     <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">Bar2</a> {
-<a class="jxr_linenumber" name="L542" href="#L542">542</a>         enum <a href="../../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">Foo</a> {
+<a class="jxr_linenumber" name="L541" href="#L541">541</a>     <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">Bar2</a> {
+<a class="jxr_linenumber" name="L542" href="#L542">542</a>         enum <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputLambda1.html">Foo</a> {
 <a class="jxr_linenumber" name="L543" href="#L543">543</a>             A;
 <a class="jxr_linenumber" name="L544" href="#L544">544</a>         }
 <a class="jxr_linenumber" name="L545" href="#L545">545</a> 
 <a class="jxr_linenumber" name="L546" href="#L546">546</a>     <em class="jxr_comment">// violation</em>
 <a class="jxr_linenumber" name="L547" href="#L547">547</a>     }
 <a class="jxr_linenumber" name="L548" href="#L548">548</a> 
-<a class="jxr_linenumber" name="L549" href="#L549">549</a>     <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">Bar3</a> {
-<a class="jxr_linenumber" name="L550" href="#L550">550</a>         @<strong class="jxr_keyword">interface</strong> <a href="../../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/commentsindentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">Foo</a> { }
+<a class="jxr_linenumber" name="L549" href="#L549">549</a>     <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputCommentsIndentationCommentIsAtTheEndOfBlock.html">Bar3</a> {
+<a class="jxr_linenumber" name="L550" href="#L550">550</a>         @<strong class="jxr_keyword">interface</strong> <a href="../../../../../../com/puppycrawl/tools/checkstyle/checks/indentation/InputLambda1.html">Foo</a> { }
 <a class="jxr_linenumber" name="L551" href="#L551">551</a>             <em class="jxr_comment">// violation</em>
 <a class="jxr_linenumber" name="L552" href="#L552">552</a>     }
 <a class="jxr_linenumber" name="L553" href="#L553">553</a> 
