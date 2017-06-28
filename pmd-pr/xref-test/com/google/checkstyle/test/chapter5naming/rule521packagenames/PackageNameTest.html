@@ -56,7 +56,7 @@
 <a class="jxr_linenumber" name="L48" href="#L48">48</a>      }
 <a class="jxr_linenumber" name="L49" href="#L49">49</a>  
 <a class="jxr_linenumber" name="L50" href="#L50">50</a>      @Test
-<a class="jxr_linenumber" name="L51" href="#L51">51</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> goodPackageNameTest() <strong class="jxr_keyword">throws</strong> Exception {
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testGoodPackageName() <strong class="jxr_keyword">throws</strong> Exception {
 <a class="jxr_linenumber" name="L52" href="#L52">52</a>  
 <a class="jxr_linenumber" name="L53" href="#L53">53</a>          <strong class="jxr_keyword">final</strong> String[] expected = CommonUtils.EMPTY_STRING_ARRAY;
 <a class="jxr_linenumber" name="L54" href="#L54">54</a>  
@@ -67,7 +67,7 @@
 <a class="jxr_linenumber" name="L59" href="#L59">59</a>      }
 <a class="jxr_linenumber" name="L60" href="#L60">60</a>  
 <a class="jxr_linenumber" name="L61" href="#L61">61</a>      @Test
-<a class="jxr_linenumber" name="L62" href="#L62">62</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> badPackageNameTest() <strong class="jxr_keyword">throws</strong> Exception {
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testBadPackageName() <strong class="jxr_keyword">throws</strong> Exception {
 <a class="jxr_linenumber" name="L63" href="#L63">63</a>  
 <a class="jxr_linenumber" name="L64" href="#L64">64</a>          <strong class="jxr_keyword">final</strong> String packagePath =
 <a class="jxr_linenumber" name="L65" href="#L65">65</a>                  <span class="jxr_string">"com.google.checkstyle.test.chapter5naming.rule521packageNamesCamelCase"</span>;
@@ -84,7 +84,7 @@
 <a class="jxr_linenumber" name="L76" href="#L76">76</a>      }
 <a class="jxr_linenumber" name="L77" href="#L77">77</a>  
 <a class="jxr_linenumber" name="L78" href="#L78">78</a>      @Test
-<a class="jxr_linenumber" name="L79" href="#L79">79</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> badPackageName2Test() <strong class="jxr_keyword">throws</strong> Exception {
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testBadPackageName2() <strong class="jxr_keyword">throws</strong> Exception {
 <a class="jxr_linenumber" name="L80" href="#L80">80</a>  
 <a class="jxr_linenumber" name="L81" href="#L81">81</a>          <strong class="jxr_keyword">final</strong> String packagePath = <span class="jxr_string">"com.google.checkstyle.test.chapter5naming.rule521_packagenames"</span>;
 <a class="jxr_linenumber" name="L82" href="#L82">82</a>          <strong class="jxr_keyword">final</strong> String msg = getCheckMessage(checkConfig.getMessages(), MSG_KEY, packagePath, format);
@@ -100,7 +100,7 @@
 <a class="jxr_linenumber" name="L92" href="#L92">92</a>      }
 <a class="jxr_linenumber" name="L93" href="#L93">93</a>  
 <a class="jxr_linenumber" name="L94" href="#L94">94</a>      @Test
-<a class="jxr_linenumber" name="L95" href="#L95">95</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> badPackageName3Test() <strong class="jxr_keyword">throws</strong> Exception {
+<a class="jxr_linenumber" name="L95" href="#L95">95</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testBadPackageName3() <strong class="jxr_keyword">throws</strong> Exception {
 <a class="jxr_linenumber" name="L96" href="#L96">96</a>  
 <a class="jxr_linenumber" name="L97" href="#L97">97</a>          <strong class="jxr_keyword">final</strong> String packagePath = <span class="jxr_string">"com.google.checkstyle.test.chapter5naming.rule521$packagenames"</span>;
 <a class="jxr_linenumber" name="L98" href="#L98">98</a>          <strong class="jxr_keyword">final</strong> String msg = getCheckMessage(checkConfig.getMessages(), MSG_KEY, packagePath, format);

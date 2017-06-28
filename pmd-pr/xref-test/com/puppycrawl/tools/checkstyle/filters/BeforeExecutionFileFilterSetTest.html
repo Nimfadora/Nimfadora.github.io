@@ -75,7 +75,19 @@
 <a class="jxr_linenumber" name="L67" href="#L67">67</a>          filterSet.addBeforeExecutionFileFilter(<strong class="jxr_keyword">new</strong> BeforeExecutionExclusionFileFilter());
 <a class="jxr_linenumber" name="L68" href="#L68">68</a>          assertNotNull(<span class="jxr_string">"size is the same"</span>, filterSet.toString());
 <a class="jxr_linenumber" name="L69" href="#L69">69</a>      }
-<a class="jxr_linenumber" name="L70" href="#L70">70</a>  }
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>  
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>      @Test
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> testClear() {
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>          <strong class="jxr_keyword">final</strong> BeforeExecutionFileFilterSet filterSet = <strong class="jxr_keyword">new</strong> BeforeExecutionFileFilterSet();
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>          filterSet.addBeforeExecutionFileFilter(<strong class="jxr_keyword">new</strong> BeforeExecutionExclusionFileFilter());
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>  
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>          assertEquals(1, filterSet.getBeforeExecutionFileFilters().size());
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>  
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>          filterSet.clear();
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>  
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>          assertEquals(0, filterSet.getBeforeExecutionFileFilters().size());
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>      }
+<a class="jxr_linenumber" name="L82" href="#L82">82</a>  }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2001&#x2013;2017. All rights reserved.</div>

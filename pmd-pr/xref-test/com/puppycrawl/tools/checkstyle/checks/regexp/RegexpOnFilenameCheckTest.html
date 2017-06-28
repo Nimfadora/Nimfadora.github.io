@@ -243,11 +243,12 @@
 <a class="jxr_linenumber" name="L235" href="#L235">235</a>             fail(<span class="jxr_string">"CheckstyleException expected"</span>);
 <a class="jxr_linenumber" name="L236" href="#L236">236</a>         }
 <a class="jxr_linenumber" name="L237" href="#L237">237</a>         <strong class="jxr_keyword">catch</strong> (CheckstyleException ex) {
-<a class="jxr_linenumber" name="L238" href="#L238">238</a>             assertEquals(<span class="jxr_string">"unable to create canonical path names for "</span> + file.getAbsolutePath(),
-<a class="jxr_linenumber" name="L239" href="#L239">239</a>                     ex.getMessage());
-<a class="jxr_linenumber" name="L240" href="#L240">240</a>         }
-<a class="jxr_linenumber" name="L241" href="#L241">241</a>     }
-<a class="jxr_linenumber" name="L242" href="#L242">242</a> }
+<a class="jxr_linenumber" name="L238" href="#L238">238</a>             assertEquals(<span class="jxr_string">"Invalid exception message"</span>,
+<a class="jxr_linenumber" name="L239" href="#L239">239</a>                 <span class="jxr_string">"unable to create canonical path names for "</span> + file.getAbsolutePath(),
+<a class="jxr_linenumber" name="L240" href="#L240">240</a>                 ex.getMessage());
+<a class="jxr_linenumber" name="L241" href="#L241">241</a>         }
+<a class="jxr_linenumber" name="L242" href="#L242">242</a>     }
+<a class="jxr_linenumber" name="L243" href="#L243">243</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2001&#x2013;2017. All rights reserved.</div>

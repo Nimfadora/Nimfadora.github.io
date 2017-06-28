@@ -113,12 +113,14 @@
 <a class="jxr_linenumber" name="L105" href="#L105">105</a>             fail(<span class="jxr_string">"exception expected"</span>);
 <a class="jxr_linenumber" name="L106" href="#L106">106</a>         }
 <a class="jxr_linenumber" name="L107" href="#L107">107</a>         <strong class="jxr_keyword">catch</strong> (CheckstyleException ex) {
-<a class="jxr_linenumber" name="L108" href="#L108">108</a>             assertTrue(ex.getMessage().startsWith(
-<a class="jxr_linenumber" name="L109" href="#L109">109</a>                     <span class="jxr_string">"cannot initialize module com.puppycrawl.tools.checkstyle.TreeWalker - "</span>
-<a class="jxr_linenumber" name="L110" href="#L110">110</a>                             + <span class="jxr_string">"Cannot set property 'option' to 'invalid_option' in module"</span>));
-<a class="jxr_linenumber" name="L111" href="#L111">111</a>         }
-<a class="jxr_linenumber" name="L112" href="#L112">112</a>     }
-<a class="jxr_linenumber" name="L113" href="#L113">113</a> }
+<a class="jxr_linenumber" name="L108" href="#L108">108</a>             <strong class="jxr_keyword">final</strong> String messageStart = <span class="jxr_string">"cannot initialize module "</span>
+<a class="jxr_linenumber" name="L109" href="#L109">109</a>                 + <span class="jxr_string">"com.puppycrawl.tools.checkstyle.TreeWalker - Cannot set property 'option' to "</span>
+<a class="jxr_linenumber" name="L110" href="#L110">110</a>                 + <span class="jxr_string">"'invalid_option' in module"</span>;
+<a class="jxr_linenumber" name="L111" href="#L111">111</a>             assertTrue(<span class="jxr_string">"Invalid exception message, should start with: "</span> + messageStart,
+<a class="jxr_linenumber" name="L112" href="#L112">112</a>                 ex.getMessage().startsWith(messageStart));
+<a class="jxr_linenumber" name="L113" href="#L113">113</a>         }
+<a class="jxr_linenumber" name="L114" href="#L114">114</a>     }
+<a class="jxr_linenumber" name="L115" href="#L115">115</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2001&#x2013;2017. All rights reserved.</div>
